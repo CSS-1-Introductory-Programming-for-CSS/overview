@@ -1,0 +1,14 @@
+# Table of contents
+
+format: jb-book
+root: intro
+parts:
+  - caption: Course Logistics
+    chapters:
+      - file: course/syllabus  
+      - file: course/expectations
+  - caption: Lectures
+    chapters:  
+    - file: lectures/01-intro 
+      title: 01-Introduction
+
