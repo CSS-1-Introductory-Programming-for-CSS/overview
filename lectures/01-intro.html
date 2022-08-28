@@ -1,0 +1,702 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Introduction to CSS &#8212; CSS 1</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Course Expectations (and FAQ)" href="../course/expectations.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo_UCSD.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">CSS 1</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to CSS 1!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Course Logistics
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../course/syllabus.html">
+   CSS 1 Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../course/expectations.html">
+   Course Expectations (and FAQ)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   01-Introduction
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/lectures/01-intro.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flectures/01-intro.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/lectures/01-intro.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals-of-this-lecture">
+   Goals of this lecture
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#course-logistics-css-1">
+   Course Logistics: CSS 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-css">
+   What is CSS?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-social-science">
+     What is social science?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-computation">
+     What is computation?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#css-inspirations">
+   CSS Inspirations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#economic-mobility">
+     Economic mobility
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#policing-and-racial-justice">
+     Policing and Racial Justice
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#course-overview">
+   Course Overview
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-python">
+     What is Python?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-python">
+     Why Python?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-does-python-look-like">
+     What does Python look like?
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Introduction to CSS</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals-of-this-lecture">
+   Goals of this lecture
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#course-logistics-css-1">
+   Course Logistics: CSS 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-css">
+   What is CSS?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-social-science">
+     What is social science?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-computation">
+     What is computation?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#css-inspirations">
+   CSS Inspirations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#economic-mobility">
+     Economic mobility
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#policing-and-racial-justice">
+     Policing and Racial Justice
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#course-overview">
+   Course Overview
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-python">
+     What is Python?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-python">
+     Why Python?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-does-python-look-like">
+     What does Python look like?
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-css">
+<h1>Introduction to CSS<a class="headerlink" href="#introduction-to-css" title="Permalink to this headline">#</a></h1>
+<section id="goals-of-this-lecture">
+<h2>Goals of this lecture<a class="headerlink" href="#goals-of-this-lecture" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Quick introductions/logistics.</p></li>
+<li><p>Introduction to CSS: What is it and why does it matter?</p></li>
+<li><p>Overview of course content.</p></li>
+</ul>
+</section>
+<section id="course-logistics-css-1">
+<h2>Course Logistics: CSS 1<a class="headerlink" href="#course-logistics-css-1" title="Permalink to this headline">#</a></h2>
+<p><strong>Teaching Team</strong>:</p>
+<ul class="simple">
+<li><p>Instructor: <a class="reference external" href="https://seantrott.github.io/">Sean Trott</a>: Assistant Teaching Professor in <a class="reference external" href="https://cogsci.ucsd.edu/">Cognitive Science</a> and <a class="reference external" href="https://css.ucsd.edu/">CSS</a>.</p></li>
+<li><p>TAs: … (<strong>todo</strong>)</p></li>
+</ul>
+<p><strong>When/Where?</strong>:</p>
+<ul class="simple">
+<li><p>Lecture: MWF 9-10 AM, Center 212 (also podcasted).</p></li>
+<li><p>Coding Lab Sections (ERCA 117):</p>
+<ul>
+<li><p>Tuesday, 12-1:50, 2-3:50</p></li>
+<li><p>Wednesday: 1-2:50</p></li>
+<li><p>Friday: 12:-1:50</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Course Website</strong>.</p>
+</section>
+<section id="what-is-css">
+<h2>What is CSS?<a class="headerlink" href="#what-is-css" title="Permalink to this headline">#</a></h2>
+<p>In a nutshell, <a class="reference external" href="https://en.wikipedia.org/wiki/Computational_social_science">Computational Social Science</a> focuses on <strong>computational approaches</strong> to <strong>social science</strong>.</p>
+<p>At UCSD, <a class="reference external" href="https://socialsciences.ucsd.edu/">Social Sciences</a> encompasses many disciplines:</p>
+<ul class="simple">
+<li><p>Economics.</p></li>
+<li><p>Political Science.</p></li>
+<li><p>Cognitive Science.</p></li>
+<li><p>Urban Studies and Planning.</p></li>
+</ul>
+<p>And <a class="reference external" href="https://socialsciences.ucsd.edu/about/org-chart.html">many more</a>!</p>
+<section id="what-is-social-science">
+<h3>What is social science?<a class="headerlink" href="#what-is-social-science" title="Permalink to this headline">#</a></h3>
+<p><strong>Social Science</strong> refers to a domain of study: social phenomena.</p>
+<ul class="simple">
+<li><p>Encompasses many <strong>scales</strong>: human psychology, language, economic behavior, political systems.</p></li>
+<li><p>Can involve many <strong>approaches</strong>: qualitative interviews, statistical analysis, simulations.</p></li>
+</ul>
+</section>
+<section id="what-is-computation">
+<h3>What is computation?<a class="headerlink" href="#what-is-computation" title="Permalink to this headline">#</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Computation"><strong>Computation</strong></a> is <em>calculation</em> using well-defined steps, e.g., an <em>algorithm</em>.</p>
+<ul class="simple">
+<li><p>A <em>computer</em> is anything that implements these well-defined steps.</p></li>
+<li><p>Historically, the term “computer” used to refer to <em>people</em>!</p></li>
+</ul>
+<p>A <strong>programming language</strong> is a way to get a computer to do these things for you.</p>
+<ul class="simple">
+<li><p>Can <em>automate</em> processes: speed things up!</p></li>
+<li><p>Can perform computations at <em>scale</em>.</p></li>
+<li><p>Can <em>share</em> with others.</p></li>
+</ul>
+</section>
+</section>
+<section id="css-inspirations">
+<h2>CSS Inspirations<a class="headerlink" href="#css-inspirations" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>CSS often involves analysis of <strong>large-scale datasets</strong> using computational and statistical tools.</p></li>
+<li><p>A key part of this approach is <strong>programming</strong>, e.g., in Python.</p></li>
+<li><p>Can yield important theoretical and practical <strong>insights</strong>.</p></li>
+</ul>
+<section id="economic-mobility">
+<h3>Economic mobility<a class="headerlink" href="#economic-mobility" title="Permalink to this headline">#</a></h3>
+<p>Recent work by <a class="reference external" href="https://rajchetty.com/">Raj Chetty</a> used a combination of <strong>social network data</strong> and <strong>Census data</strong> to demonstrate a link between:</p>
+<ul class="simple">
+<li><p>The <strong>Economic Connectedness</strong> of a neighborhood.</p></li>
+<li><p>How much <strong>Upward Mobility</strong> exists in a neighborhood.</p></li>
+</ul>
+<p><img alt="title" src="../_images/chetty_2022.png" /></p>
+</section>
+<section id="policing-and-racial-justice">
+<h3>Policing and Racial Justice<a class="headerlink" href="#policing-and-racial-justice" title="Permalink to this headline">#</a></h3>
+<p>Work by <a class="reference external" href="https://www.pnas.org/doi/full/10.1073/pnas.1702413114#fig01">Dan Jurafsky and colleagues</a> using <strong>body-cam footage</strong> has demonstrated racial disparities in how respectfully police officers speak to community members during routine traffic stops.</p>
+<p><img alt="title" src="../_images/jurafsky_2017.png" /></p>
+</section>
+</section>
+<section id="course-overview">
+<h2>Course Overview<a class="headerlink" href="#course-overview" title="Permalink to this headline">#</a></h2>
+<p>The goal of this course is to teach you:</p>
+<ul class="simple">
+<li><p><strong>Computational thinking</strong>: how to approach problems and devise solutions from a computational perspective.</p></li>
+<li><p><strong>Python programming</strong>: how to implement those solutions in the Python programming language.</p></li>
+</ul>
+<section id="what-is-python">
+<h3>What is Python?<a class="headerlink" href="#what-is-python" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Python is a <strong>programming language</strong>.</p>
+<ul>
+<li><p>It’s a way to “do” computation.</p></li>
+</ul>
+</li>
+<li><p>Python is also an <strong>ecosystem</strong>.</p>
+<ul>
+<li><p>A particular computational approach with its own community and practices.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="why-python">
+<h3>Why Python?<a class="headerlink" href="#why-python" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Many <a class="reference external" href="https://en.wikipedia.org/wiki/Open_source">open source</a> packages for <strong>scientific computing</strong>.</p></li>
+<li><p>Python is <strong>widely used</strong>.</p></li>
+</ul>
+<p><img alt="title" src="../_images/python.png" /></p>
+</section>
+<section id="what-does-python-look-like">
+<h3>What does Python look like?<a class="headerlink" href="#what-does-python-look-like" title="Permalink to this headline">#</a></h3>
+<p>Outline:</p>
+<ul class="simple">
+<li><p>What is CSS?</p></li>
+<li><p>Inspirations:</p></li>
+<li><p>Raj Chetty work</p></li>
+<li><p>Work on Twitter and sentiment analysis.</p></li>
+<li><p>Work on language models and historical bias, etc. (Jurafsky)</p></li>
+<li><p>Work on language evolution.
+?</p></li>
+<li><p>Course Overview</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./lectures"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../course/expectations.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Course Expectations (and FAQ)</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Sean Trott<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
