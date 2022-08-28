@@ -1,2 +1,3 @@
-# css1_ucsd
+# CSS 1 (UCSD)
+
 Course website for CSS 1.

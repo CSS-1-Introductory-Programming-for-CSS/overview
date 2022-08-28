@@ -22,7 +22,9 @@ First, Python is **widely used**, for both data analysis and software engineerin
 In a [2021 Stack Overflow survey](https://insights.stackoverflow.com/survey/2021#most-popular-technologies-language) (N = 83K), approximately **48%** of respondents worked with or wanted to work with Python.
 :::
 
-Second, Python has many [open source](https://en.wikipedia.org/wiki/Open_source) packages for **scientific computing**, such as [`pandas`](https://pandas.pydata.org/) (for working with data tables) and [`seaborn`](https://seaborn.pydata.org/) (for plotting data). This makes Python an excellent entry-point into learning to ask scientific questions from a **computational, data-driven perspective**.
+Second, Python also has a large, active developer community. There are many [open source](https://en.wikipedia.org/wiki/Open_source) packages for **scientific computing**, such as [`pandas`](https://pandas.pydata.org/) (for working with data tables) and [`seaborn`](https://seaborn.pydata.org/) (for plotting data). This makes Python an excellent entry-point into learning to ask scientific questions from a **computational, data-driven perspective**.
+
+Finally, Python is **human-focused**. The goal is to write clean, readable code that can be shared with others and facilitate *communication*.
 
 
 ### Why no midterms or final exam?
