@@ -13,6 +13,23 @@ By the end of this course, you should be able to:
 - **Execute** Python programs in Jupyter notebooks. 
 
 
+
+## Course Logistics
+
+### Teaching Team:
+
+- Instructor: Sean Trott: Assistant Teaching Professor in Cognitive Science and CSS.
+- TAs: … (todo)
+
+### When/Where?:
+
+- Lecture: MWF 9-10 AM, Center 212 (also podcasted).
+- Coding Lab Sections (ERCA 117):
+  - Tuesday, 12-1:50, 2-3:50
+  - Wednesday: 1-2:50
+  - Friday: 12:-1:50
+
+
 ## Grading
 
 ### Grade Components
