@@ -7,8 +7,11 @@ parts:
     chapters:
       - file: course/syllabus  
       - file: course/expectations
+      - file: course/schedule
   - caption: Lectures
     chapters:  
     - file: lectures/01-intro 
       title: 01-Introduction
+    - file: lectures/02-tooling 
+      title: 02-Tooling
 

@@ -1,18 +1,21 @@
 # CSS 1 Syllabus
 
-## Learning Outcomes
+## Course Overview
 
+This course will teach you how to approach research questions in social science from a **computational perspective**. This includes *thinking computationally*, as well as developing the *skillset* to implement the ideas and solutions you think of. Specifically, you will learn to program in Python.
 
+## Key Learning Outcomes
 
-**TODO**:
+By the end of this course, you should be able to:
 
-- Discuss emphasis on skill learning  
-- Copy some of Expectations page from old CSS 1  
-- More details on final project...
+- **Design** and **implement** Python programs.  
+- **Read**, **interpret**, and **debug** Python code. 
+- **Execute** Python programs in Jupyter notebooks. 
 
 
 ## Grading
 
+### Grade Components
 Your grade will be determined by three kinds of assessments: [coding labs](../labs/overview.md), [problem sets](../problem_sets/overview.md), and a [final project](../project/overview.md).
 
 
@@ -23,53 +26,71 @@ Your grade will be determined by three kinds of assessments: [coding labs](../la
 | 1 Final Project| 18% |
 
 
+### Letter Grades
+
+If you're taking the course for a letter grade, your grade will be determined according to the scale below:
+
+ <span>Percentage</span>        | <span>Letter Grade</span>
+----------------------|----------------
+97-100%  | A+
+93-96%   | A
+90-92%   | A-
+87-89%   | B+
+83-86%   | B
+80-82%   | B-
+77-79%   | C+
+73-76%   | C
+70-72%   | C-
+67-69%   | D+
+63-66%   | D
+60-62%   | D-
+<60%     | F
+
+
+### Extra Credit
+
+You will have at least one opportunity to earn 2% extra credit: 
+
+- Experience/comfort with programming.  
+- Major (or intended major).  
+- Other background information.  
+
+### On Rounding 
+
+Note that my policy is *not* to round up grades for two reasons:
+
+1. If rounding is applied selectively (i.e., only to students who ask), it is unfair to other students.  
+2. If rounding is applied across the board, it simply redefines the boundary between two letter grades (e.g., making an 89% the cut-off for an A-).
+
+
+## Questions, feedback, and communication
+
+Instructors can be reached in the following ways:
+
+- Office hours.  
+- Public question on Piazza.  
+- Private message over Piazza.  
+- Email. 
+
+Note that in general, we prefer communication over Piazza as opposed to email. 
+
+
+## Other Information
+
+### Academic Integrity
+
+Please turn in your own work. While you are encouraged to work together on some assignments (e.g., on [labs](../labs/overview.md)), you should still understand the code you've submitted. Problem sets and final project should be completed independently.
+
+Please review academic integrity policies [here](http://academicintegrity.ucsd.edu). Cheating and plagiarism are unfair to other students and ultimately to yourself, and you will be penalized if caught. Instead, if you're struggling with something, please come to office hours and ask for help! 
+
+### Class Conduct
+
+All of us (instructors + students) should treat others with respect and follow the UC San Diego [Principles of Community](https://ucsd.edu/about/principles.html). This class should be a welcoming and inclusive environment for everyone, regardless of gender, gender identity and expression, sexual orientation, physical appearance, disability, race, or ethnicity. 
+
+Please be considerate and respectful of your fellow classmates (and instructors), refrain from discriminatory language and harassment, and interact with good faith. 
+
+
 
 ## Schedule of Course Content
 
-Note that this schedule is **aspirational** and is therefore **subject to change**.
-
-| Date | Topics | Assignment due |
-| ---- | ------ | -------------- |
-| **Week 0** | | |
-| M-09-23-2022 | Welcome + Introduction| |
-|  | | |
-| **Week 1** | | |
-| M-09-26-2022 | Tooling | |
-| W-09-28-2022 | Python Basics | |
-| W-09-30-2022 | Python Basics | |
-| **Week 2** | | |
-| M-10-03-2022 | Control Flow | |
-| W-10-05-2022 | Control Flow | |
-| W-10-07-2022 | Control Flow | |
-| **Week 3** | | |
-| M-10-10-2022 | Sequences: Strings | |
-| W-10-12-2022 | Sequences: Lists | |
-| W-10-14-2022 | Sequences: Lists | |
-| **Week 4** | | |
-| M-10-17-2022 | Dictionaries | |
-| W-10-19-2022 | Dictionaries | |
-| W-10-21-2022 | Sets | |
-| **Week 5** | | |
-| M-10-24-2022 | Functions | |
-| W-10-26-2022 | Functions | |
-| W-10-28-2022 | Functions | |
-| **Week 6** | | |
-| M-10-31-2022 | Classes | |
-| W-11-02-2022 | Classes | |
-| W-11-04-2022 | Classes | |
-| **Week 7** | | |
-| M-11-07-2022 | Data Structures| |
-| W-11-09-2022 | Pandas | |
-| W-11-11-2022 | **Holiday (Veteran's Day)**| |
-| **Week 8** | | |
-| M-11-14-2022 | Pandas | |
-| W-11-16-2022 | Pandas | |
-| W-11-18-2022 | Plotting: Matplotlib | |
-| **Week 9** | | |
-| M-11-21-2022 | Plotting: Matplotlib | |
-| W-11-23-2022 | Plotting: Seaborn | |
-| W-11-25-2022 | Plotting: Seaborn | |
-| **Week 10** | | |
-| M-11-28-2022 | | |
-| W-11-30-2022 | | |
-| W-12-02-2022 | | |
+See the schedule [here](schedule.md).
