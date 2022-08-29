@@ -179,4 +179,13 @@ variable_integer2 + variable_integer1
 # 
 # [See the FAQ page](https://seantrott.github.io/css1_ucsd/course/expectations.html#) for more information.
 
+# ### Academic Integrity
+# 
+# From the syllabus:
+# 
+# > Please turn in your own work. While you are encouraged to work together on some assignments (e.g., on [labs](../labs/overview.md)), you should still understand the code you've submitted. Problem sets and final project should be completed independently.
+# 
+# > Please review academic integrity policies [here](http://academicintegrity.ucsd.edu). Cheating and plagiarism are unfair to other students and ultimately to yourself, and you will be penalized if caught. Instead, if you're struggling with something, please come to office hours and ask for help! 
+# 
+
 # ## Welcome to CSS!

@@ -21,9 +21,6 @@ This course will involve a lot of **effort**, especially for students who haven'
 - **Persevere**: programming is hard and can be frustrating. Even experienced programmers make errors. But again, we're here to address questions and issues that arise––and there are also resources online, like [StackOverflow](https://stackoverflow.com/). 
 
 
-
-
-
 ## Frequently Asked Questions
 
 ### Are there prerequisites for this course?
@@ -49,6 +46,9 @@ Second, Python also has a large, active developer community. There are many [ope
 
 Finally, Python is **human-focused**. The goal is to write clean, readable code that can be shared with others and facilitate *communication*.
 
+### What do I need to install?
+
+DataHub should have the requisite software (Python, Jupyter notebooks, and relevant Python libraries). However, if you plan to work on projects **locally**, i.e., not using DataHub, you'll want to install Anaconda, which will also install Jupyter.
 
 ### Why no midterms or final exam?
 
