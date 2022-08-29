@@ -6,8 +6,8 @@ parts:
   - caption: Course Logistics
     chapters:
       - file: course/syllabus  
-      - file: course/expectations
       - file: course/schedule
+      - file: course/expectations
   - caption: Lectures
     chapters:  
     - file: lectures/01-intro 
