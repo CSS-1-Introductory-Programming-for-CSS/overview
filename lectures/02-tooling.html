@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Final Project: Overview &#8212; CSS 1</title>
+    <title>Tooling and Environment &#8212; CSS 1</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Introduction to CSS" href="01-intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -138,14 +139,14 @@ const thebe_selector_output = ".output, .cell_output"
   Lectures
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/01-intro.html">
+  <a class="reference internal" href="01-intro.html">
    01-Introduction
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/02-tooling.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    02-Tooling
   </a>
  </li>
@@ -200,6 +201,35 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/lectures/02-tooling.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -239,7 +269,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fproject/overview.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flectures/02-tooling.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -267,7 +297,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/project/overview.md"
+        <a href="../_sources/lectures/02-tooling.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -278,7 +308,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.md</span>
+<span class="headerbtn__text-container">.ipynb</span>
 </a>
 
       </li>
@@ -327,13 +357,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#goals">
-   Goals
+  <a class="reference internal nav-link" href="#goals-of-this-lecture">
+   Goals of this lecture
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-final-project-is-completed-independently">
-   The final project is completed independently.
+  <a class="reference internal nav-link" href="#what-is-tooling-and-why-is-it-hard">
+   What is tooling, and why is it hard?
   </a>
  </li>
 </ul>
@@ -345,7 +375,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Final Project: Overview</h1>
+                <h1>Tooling and Environment</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -356,13 +386,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#goals">
-   Goals
+  <a class="reference internal nav-link" href="#goals-of-this-lecture">
+   Goals of this lecture
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-final-project-is-completed-independently">
-   The final project is completed independently.
+  <a class="reference internal nav-link" href="#what-is-tooling-and-why-is-it-hard">
+   What is tooling, and why is it hard?
   </a>
  </li>
 </ul>
@@ -375,18 +405,28 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="final-project-overview">
-<h1>Final Project: Overview<a class="headerlink" href="#final-project-overview" title="Permalink to this headline">#</a></h1>
-<p>As part of the course, you must complete a <strong>final project</strong>.</p>
-<p>You can think of the final project as a larger, more coherent problem set. Like the problem sets, you’ll be graded for correctness (and you should complete it independently). But unlike the problem sets, the questions in this final project will <em>build</em> towards a larger conclusion––you’ll produce a small piece of working software and data analysis.</p>
-<section id="goals">
-<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">#</a></h2>
-<p>Like the labs and problem sets, the goal of this final project is to give you hands-on experience programming in Python.</p>
-<p>Unlike the other assessments, the final project is intended to be a more <strong>coherent</strong> exercise.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tooling-and-environment">
+<h1>Tooling and Environment<a class="headerlink" href="#tooling-and-environment" title="Permalink to this headline">#</a></h1>
+<section id="goals-of-this-lecture">
+<h2>Goals of this lecture<a class="headerlink" href="#goals-of-this-lecture" title="Permalink to this headline">#</a></h2>
+<p>In this lecture, we’ll discuss some of the key <strong>software tools</strong> we’ll be using throughout the course.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jupyter.org/">Jupyter notebooks</a>.</p></li>
+<li><p><a class="reference external" href="https://datahub.io/">Datahub</a>.</p></li>
+<li><p><a class="reference external" href="https://www.anaconda.com/products/distribution">Anaconda</a>.</p></li>
+</ul>
 </section>
-<section id="the-final-project-is-completed-independently">
-<h2>The final project is completed independently.<a class="headerlink" href="#the-final-project-is-completed-independently" title="Permalink to this headline">#</a></h2>
-<p>Again, you can think of this like a bigger problem set: it’ll be graded for correctness, and you should work on it independently.</p>
+<section id="what-is-tooling-and-why-is-it-hard">
+<h2>What is tooling, and why is it hard?<a class="headerlink" href="#what-is-tooling-and-why-is-it-hard" title="Permalink to this headline">#</a></h2>
+<p>Often, one of the hardest things about learning programming is <strong>tooling</strong>.</p>
+<ul class="simple">
+<li><p>There are tons of new tools you’ve never used before, and it can seem overwhelming.</p></li>
+<li><p>So if you <em>do</em> feel overwhelmed, you’re not alone!</p></li>
+</ul>
+<p>This means:</p>
+<ul class="simple">
+<li><p>Don’t hesitate to ask us for help.</p></li>
+</ul>
 </section>
 </section>
 
@@ -403,7 +443,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./project"
+            path: "./lectures"
         },
         predefinedOutput: true
     }
@@ -417,6 +457,13 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="01-intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Introduction to CSS</p>
+        </div>
+    </a>
 </div>
             </footer>
         </div>
