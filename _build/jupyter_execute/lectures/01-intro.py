@@ -71,11 +71,15 @@
 # - The **Economic Connectedness** of a neighborhood.  
 # - How much **Upward Mobility** exists in a neighborhood.
 # 
+# *Jackson et al. (2022)*:
+# 
 # ![title](../img/lectures/intro/chetty_2022.png)
 
 # ### Policing and Racial Justice
 # 
 # Work by [Dan Jurafsky and colleagues](https://www.pnas.org/doi/full/10.1073/pnas.1702413114#fig01) using **body-cam footage** has demonstrated racial disparities in how respectfully police officers speak to community members during routine traffic stops.
+# 
+# *Jurafsky et al. (2017)*:
 # 
 # ![title](../img/lectures/intro/jurafsky_2017.png)
 
