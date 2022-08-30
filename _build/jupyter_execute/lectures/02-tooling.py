@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Tooling and Environment
+# # 02-Tooling
 
 # ## Goals of this lecture
 # 

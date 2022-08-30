@@ -11,7 +11,11 @@ parts:
   - caption: Lectures
     chapters:  
     - file: lectures/01-intro 
-      title: 01-Introduction
+      title: 01-Introduction  
     - file: lectures/02-tooling 
-      title: 02-Tooling
+      title: 02-Tooling 
+    - file: lectures/03-basics-variables
+      title: 03-Basics (Variables) 
+    - file: lectures/04-basics-syntax
+      title: 04-Basics (Syntax) 
 
