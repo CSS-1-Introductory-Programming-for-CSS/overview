@@ -9,9 +9,9 @@ This course will teach you how to approach research questions in social science 
 This course is one of the [**three core courses** for the CSS Minor at UCSD](https://css.ucsd.edu/undergraduate-minor/index.html), along with CSS 2 and CSS 100. Note that there are **no official prerequisites** for this course; please see the [course expectations](course/expectations.md) page for more information.
 
 ```{note}
-This course has undergone various iterations. The current version owes a big debt to [this version](https://ucsd-css-001.github.io/index.html) taught by [Professor John Serences](https://serenceslab.ucsd.edu/). Although the specific labs and lectures will be new, the underlying content should be largely the same. 
+This course has undergone various iterations. The current version owes a big debt to [this version](https://ucsd-css-001.github.io/index.html) taught by [Professor John Serences](https://serenceslab.ucsd.edu/). Although the specific labs and lectures will be new, the underlying content will be similar.
 
-Some ideas for course structure have also been adapted from [COGS 18](https://cogs18.github.io/intro.html), developed by [Professor Shannon Ellis](https://www.shanellis.com/) and [Dr. Tom Donoghue](https://tomdonoghue.github.io/).
+Ideas for course structure have also been adapted from [COGS 18](https://cogs18.github.io/intro.html), developed by [Professor Shannon Ellis](https://www.shanellis.com/) and [Dr. Tom Donoghue](https://tomdonoghue.github.io/).
 ```
 
 

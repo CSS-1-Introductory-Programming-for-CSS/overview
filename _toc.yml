@@ -18,4 +18,18 @@ parts:
       title: 03-Basics (Variables) 
     - file: lectures/04-basics-syntax
       title: 04-Basics (Syntax) 
+    - file: lectures/05-conditionals
+      title: 05-Conditionals
+    - file: lectures/06-loops
+      title: 06-Loops
+    - file: lectures/07-loops-while
+      title: 07-Loops (While)
+    - file: lectures/08-strings
+      title: 08-Strings (Basics)
+    - file: lectures/09-strings-advanced
+      title: 09-Strings (Advanced)
+    - file: lectures/10-lists
+      title: 10-Lists (Basics)
+    - file: lectures/11-lists-advanced
+      title: 11-Lists (Advanced)
 

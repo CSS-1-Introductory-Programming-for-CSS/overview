@@ -18,7 +18,7 @@ By the end of this course, you should be able to:
 
 ### Teaching Team:
 
-- Instructor: Sean Trott: Assistant Teaching Professor in Cognitive Science and CSS.
+- [Sean Trott](https://seantrott.github.io/): Assistant Teaching Professor in Cognitive Science and CSS.
 - TAs: … (todo)
 
 ### When/Where?:

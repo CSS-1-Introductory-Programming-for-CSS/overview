@@ -66,10 +66,7 @@
 
 # ### Economic mobility
 # 
-# Recent work by [Raj Chetty](https://rajchetty.com/) used a combination of **social network data** and **Census data** to demonstrate a link between:
-# 
-# - The **Economic Connectedness** of a neighborhood.  
-# - How much **Upward Mobility** exists in a neighborhood.
+# Recent work by [Raj Chetty](https://rajchetty.com/) used a combination of **social network data** and **Census data** to demonstrate a link between the **Economic Connectedness** of a neighborhood, and how much **Upward Mobility** exists in a neighborhood.
 # 
 # *Jackson et al. (2022)*:
 # 
@@ -82,6 +79,14 @@
 # *Jurafsky et al. (2017)*:
 # 
 # ![title](../img/lectures/intro/jurafsky_2017.png)
+
+# ### Urban planning and welfare
+# 
+# Recent work by [Nicol Bergou and colleagues](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0271306) used a **smartphone app** to investigate the link between features of urban design and self-reported sell-being.
+# 
+# *Bergou et al. (2022)*:
+# 
+# ![title](../img/lectures/intro/bergou_2022.png)
 
 # ## Course Overview
 # 
@@ -149,12 +154,23 @@ variable_integer2 + variable_integer1
 
 # ### Overview of topics
 # 
-# Note that this course will involve many new *concepts* and *software tools*. Students come from all sorts of backgrounds with different levels of experience, but our goal is to help you learn Python from the "ground up".
+# Note that this course will involve many new *concepts* and *software tools*. Students come from all sorts of backgrounds with different levels of experience, but our goal is to help you learn Python from the "ground up", with a focus on using Python for CSS specifically.
 # 
 # - Common tools/software for Python programming, e.g., [Jupyter notebooks](https://jupyter.org/).  
 # - Python basics, e.g., [variables](https://www.w3schools.com/python/python_variables.asp), [conditional statements ("if/else")](https://realpython.com/python-conditional-statements/), and [functions](https://www.w3schools.com/python/python_functions.asp).  
 # - Working with **sequences**, such as [lists](https://www.w3schools.com/python/python_lists.asp).  
 # - Packages for scientific computing, such as [`pandas`](https://pandas.pydata.org/), [`numpy`](https://numpy.org/), and [`seaborn`](https://seaborn.pydata.org/).  
+
+# ### What this course is (and is not)
+# 
+# - This course fulfills a particular **niche**: it's intended to get you up to speed with Python, for the purposes of learning more about CSS.  
+# - Thus, this course will acquaint you with:
+#    - Basic Python programming.  
+#    - Working with data in Python.  
+# - This course is not:
+#    - An introduction to software engineering.  
+#    - A *complete* introduction to Python.  
+# 
 
 # ### Grading and Assessments
 # 
