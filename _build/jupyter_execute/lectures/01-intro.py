@@ -12,8 +12,13 @@
 # ## Course Logistics: CSS 1
 # 
 # **Teaching Team**:
-# - Instructor: [Sean Trott](https://seantrott.github.io/): Assistant Teaching Professor in [Cognitive Science](https://cogsci.ucsd.edu/) and [CSS](https://css.ucsd.edu/).  
-# - TAs: ... (**todo**)
+# 
+# - [Sean Trott](https://seantrott.github.io/): Assistant Teaching Professor in Cognitive Science and CSS.
+# - TAs:
+#    - Pulkit Agrawal  
+#    - Nikolay Kudrin  
+#    - Purva Kothari  
+#    - Simran Barnwal
 # 
 # **When/Where?**:
 # - Lecture: MWF 9-10 AM, Center 212 (also podcasted).  
@@ -149,7 +154,8 @@ variable_integer2 + variable_integer1
 # Class time is divided into *lecture* and *section*.
 # 
 # - Lecture is a time to **introduce**, **explain**, and **demonstrate** new concepts.  
-# - Section is a time to **practice** and **develop fluency** with these concepts.  
+#   - There will be a focus on **hands-on practice** (i.e., "check-ins"). 
+# - Section is a time to **practice** and **develop further fluency** with these concepts.  
 # 
 
 # ### Overview of topics
@@ -174,8 +180,8 @@ variable_integer2 + variable_integer1
 
 # ### Grading and Assessments
 # 
-# - Each week (except Week 0) will have a **coding lab** due Friday; these are graded for *completion*.  
-# - There are also **four problem sets**, which will be auto-graded for *correctness*.  
+# - Each week (except Week 0) will have a **coding lab** due Friday.
+# - There are also **four problem sets**, which will be auto-graded.
 # - There is also a **final project**––like a big, more coherent problem set.
 # 
 # | Grade Component | Percentage of Final Grade |
