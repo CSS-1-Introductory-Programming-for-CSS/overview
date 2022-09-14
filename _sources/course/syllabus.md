@@ -8,10 +8,9 @@ This course will teach you how to approach research questions in social science 
 
 By the end of this course, you should be able to:
 
-- **Design** and **implement** Python programs.  
+- **Design**, **implement**, and **execute** basic Python programs in Jupyter notebooks.  
 - **Read**, **interpret**, and **debug** Python code. 
-- **Execute** Python programs in Jupyter notebooks. 
-
+- **Manipulate** data in Python and make **calculations** and **visualizations** with that data.
 
 
 ## Course Logistics
@@ -19,7 +18,12 @@ By the end of this course, you should be able to:
 ### Teaching Team:
 
 - [Sean Trott](https://seantrott.github.io/): Assistant Teaching Professor in Cognitive Science and CSS.
-- TAs: … (todo)
+- TAs:
+   - Pulkit Agrawal  
+   - Nikolay Kudrin  
+   - Purva Kothari  
+   - Simran Barnwal
+
 
 ### When/Where?:
 
