@@ -42,9 +42,9 @@ Note that this schedule is **aspirational** and is therefore **subject to change
 | **Week 9** | | |
 | M-11-21-2022 | Plotting: Matplotlib | |
 | W-11-23-2022 | Plotting: Matplotlib | **PS 4 due** |
-| F-11-25-2022 | Plotting: Seaborn | Lab 9 due |
+| F-11-25-2022 | **Holiday (Thanksgiving)** | Lab 9 due |
 | **Week 10** | | |
-| M-11-28-2022 | | |
+| M-11-28-2022 | Plotting: Seaborn | |
 | W-11-30-2022 | | |
 | F-12-02-2022 | Useful Packages and Tools | Lab 10 due |
 | **Finals Week** | | |
