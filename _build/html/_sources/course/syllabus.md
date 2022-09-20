@@ -1,4 +1,4 @@
-# CSS 1 Syllabus
+# CSS 1 Syllabus: Fall 2022
 
 ## Course Overview
 
@@ -23,6 +23,16 @@ By the end of this course, you should be able to:
    - Nikolay Kudrin  
    - Purva Kothari  
    - Simran Barnwal
+
+#### Teaching Team OH
+
+| Who? | When? | Where? |
+| ---- | ----- | ------ |
+| Sean Trott | Monday 10-11 | CSB Courtyard |
+| Pulkit Agrawal  | ? | ? |
+| Nikolay Kudrin  | ? | ? |
+| Purva Kothari  | ? | ? |
+| Simran Barnwal | ? | ? |
 
 
 ### When/Where?:
@@ -70,7 +80,7 @@ If you're taking the course for a letter grade, your grade will be determined ac
 
 ### Extra Credit
 
-You will have at least one opportunity to earn 2% extra credit: 
+You will have at least one opportunity to earn 2% extra credit by filling out a survey about your:
 
 - Experience/comfort with programming.  
 - Major (or intended major).  
@@ -92,6 +102,8 @@ Instructors can be reached in the following ways:
 - Public question on Piazza.  
 - Private message over Piazza.  
 - Email. 
+
+The course Piazza can be found here: piazza.com/ucsd/fall2022/css1
 
 Note that in general, we prefer communication over Piazza as opposed to email. 
 

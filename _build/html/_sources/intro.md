@@ -14,6 +14,10 @@ This course has undergone various iterations. The current version owes a big deb
 Ideas for course structure have also been adapted from [COGS 18](https://cogs18.github.io/intro.html), developed by [Professor Shannon Ellis](https://www.shanellis.com/) and [Dr. Tom Donoghue](https://tomdonoghue.github.io/).
 ```
 
+## Current Iteration
+
+The current version of this class is **Fall 2022**.
+
 
 ## Grading
 

@@ -27,7 +27,7 @@
 #    - Wednesday: 1-2:50
 #    - Friday: 12:-1:50
 #    
-# [**Course Website**](https://seantrott.github.io/css1_ucsd/intro.html).
+# [**Course Website**](https://ucsd-css1-introduction.github.io/overview/intro.html).
 # 
 
 # ## What is CSS?
@@ -75,7 +75,7 @@
 # 
 # *Jackson et al. (2022)*:
 # 
-# ![title](../img/lectures/intro/chetty_2022.png)
+# ![title](img/chetty_2022.png)
 
 # ### Policing and Racial Justice
 # 
@@ -83,7 +83,7 @@
 # 
 # *Jurafsky et al. (2017)*:
 # 
-# ![title](../img/lectures/intro/jurafsky_2017.png)
+# ![title](img/jurafsky_2017.png)
 
 # ### Urban planning and welfare
 # 
@@ -91,7 +91,7 @@
 # 
 # *Bergou et al. (2022)*:
 # 
-# ![title](../img/lectures/intro/bergou_2022.png)
+# ![title](img/bergou_2022.png)
 
 # ## Course Overview
 # 
@@ -114,7 +114,7 @@
 # - **Human focused**: [Zen of Python](https://peps.python.org/pep-0020/).  
 # - Python is **widely used**. 
 # 
-# ![title](../img/lectures/intro/python.png)
+# ![title](img/python.png)
 
 # ### What does Python look like?
 
@@ -158,6 +158,14 @@ variable_integer2 + variable_integer1
 # - Section is a time to **practice** and **develop further fluency** with these concepts.  
 # 
 
+# ### Following along in lecture
+# 
+# - Lecture will have many opportunities to **follow along** via **check-ins**.  
+# - I do recommend doing this, whether you're in-person or watching the podcast! 
+# - The lectures can all be found on GitHub, and downloaded or **cloned** into your DataHub account: 
+#    - Link: https://github.com/UCSD-CSS1-Introduction/lectures
+#    - We'll review exactly how to do that in class.
+
 # ### Overview of topics
 # 
 # Note that this course will involve many new *concepts* and *software tools*. Students come from all sorts of backgrounds with different levels of experience, but our goal is to help you learn Python from the "ground up", with a focus on using Python for CSS specifically.
@@ -176,6 +184,13 @@ variable_integer2 + variable_integer1
 # - This course is not:
 #    - An introduction to software engineering.  
 #    - A *complete* introduction to Python.  
+# 
+
+# ### Course Schedule
+# 
+# - The tentative schedule of topics can be found here: https://ucsd-css1-introduction.github.io/overview/course/schedule.html
+# - This schedule is **aspirational**.  
+#   - This is the first time I'm teaching the course, so we may get through topics slower or faster than described there.  
 # 
 
 # ### Grading and Assessments
