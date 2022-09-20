@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Labs Overview &#8212; CSS 1</title>
+    <title>Using DataHub &#8212; CSS 1</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Introduction to CSS" href="../lectures/01-intro.html" />
+    <link rel="prev" title="Course Expectations (and FAQ)" href="expectations.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -116,24 +118,24 @@ const thebe_selector_output = ".output, .cell_output"
   Course Logistics
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../course/syllabus.html">
+  <a class="reference internal" href="syllabus.html">
    CSS 1 Syllabus: Fall 2022
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../course/schedule.html">
+  <a class="reference internal" href="schedule.html">
    CSS 1 Schedule
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../course/expectations.html">
+  <a class="reference internal" href="expectations.html">
    Course Expectations (and FAQ)
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../course/datahub.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Using DataHub
   </a>
  </li>
@@ -319,7 +321,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flabs/overview.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcourse/datahub.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -347,7 +349,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/labs/overview.md"
+        <a href="../_sources/course/datahub.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -407,9 +409,21 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#labs-are-collaborative">
-   Labs are collaborative.
+  <a class="reference internal nav-link" href="#what-is-datahub">
+   What is DataHub?
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignments">
+   Assignments
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#things-to-watch-out-for">
+     Things to watch out for
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -420,7 +434,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Labs Overview</h1>
+                <h1>Using DataHub</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -431,9 +445,21 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#labs-are-collaborative">
-   Labs are collaborative.
+  <a class="reference internal nav-link" href="#what-is-datahub">
+   What is DataHub?
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignments">
+   Assignments
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#things-to-watch-out-for">
+     Things to watch out for
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -445,14 +471,40 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="labs-overview">
-<h1>Labs Overview<a class="headerlink" href="#labs-overview" title="Permalink to this headline">#</a></h1>
-<p>Labs are intended to give you hands-on programming experience.</p>
-<p>You’ll have a lab each week, which is intended to be completed during section. Note that if you can’t physically attend section (or are working asynchronously), that’s totally fine. The benefit of working during section is that you’ll have quick access to the excellent Teaching Assistants (and your classmates) if you have questions.</p>
-<section id="labs-are-collaborative">
-<h2>Labs are collaborative.<a class="headerlink" href="#labs-are-collaborative" title="Permalink to this headline">#</a></h2>
-<p>You can (and should!) work with other classmates.</p>
-<p>In general, programming is often a team sport. You’ll find that to be true in both software engineering and data science. Thus, labs are a good opportunity to practice working with others.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="using-datahub">
+<h1>Using DataHub<a class="headerlink" href="#using-datahub" title="Permalink to this headline">#</a></h1>
+<p>In this course, you will use DataHub to <strong>retrieve</strong> and <strong>submit</strong> assignments. This page is an overview of how to do that. (We will cover the details in class as well.)</p>
+<section id="what-is-datahub">
+<h2>What is DataHub?<a class="headerlink" href="#what-is-datahub" title="Permalink to this headline">#</a></h2>
+<p>DataHub is a way to use UCSD computing infrastructure to:</p>
+<ul class="simple">
+<li><p>Access and use Jupyter notebooks.</p></li>
+<li><p>Distribute, collect, and grade assignments (using its integration with <strong>nbgrader</strong>).</p></li>
+</ul>
+<p>In this course, DataHub will be your go-to tool for accessing course labs, problem sets, and even lectures (if you choose to follow along in class).</p>
+</section>
+<section id="assignments">
+<h2>Assignments<a class="headerlink" href="#assignments" title="Permalink to this headline">#</a></h2>
+<p>To complete an assignment (or lab, etc.) you’ll need to:</p>
+<ol class="simple">
+<li><p>Log into DataHub using your UCSD credentials.</p></li>
+<li><p>Launch the class environment.</p></li>
+<li><p>Click on “Assignments”, then click “Fetch” to download the latest one that’s been released.</p></li>
+<li><p>To open an assignment, click on the newly created folder, then click on the main file in this folder.</p></li>
+<li><p>To complete an assignment, follow the interactive instructions in the notebook, and make sure to remove all <code class="docutils literal notranslate"><span class="pre">NotImplementedError</span></code>s.</p></li>
+<li><p>Save your work regularly!</p></li>
+<li><p>When you’re done, you can click “Validate”, to check that you’re passing all visible tests (some tests are “hidden”).</p></li>
+<li><p>Once you’ve validated the assignment, you can click <strong>Submit</strong>.</p></li>
+</ol>
+<section id="things-to-watch-out-for">
+<h3>Things to watch out for<a class="headerlink" href="#things-to-watch-out-for" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Don’t change the name of the assignment file!</p></li>
+<li><p>You must click “Submit” in order to receive credit.</p></li>
+<li><p>Your most recent submission will be the one we see/grade. Importantly, that means that if you submit <em>after the deadline</em>, it’ll automatically be marked as late.</p></li>
+<li><p>Some questions will have <em>hidden</em> answers. This means that you can’t just hard-code the answers to the visible tests to get full credit.</p></li>
+</ul>
+</section>
 </section>
 </section>
 
@@ -469,7 +521,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./labs"
+            path: "./course"
         },
         predefinedOutput: true
     }
@@ -483,6 +535,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="expectations.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Course Expectations (and FAQ)</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../lectures/01-intro.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Introduction to CSS</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>

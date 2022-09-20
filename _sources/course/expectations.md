@@ -61,3 +61,7 @@ From a pedagogical perspective, assessments are valuable for several reasons:
 Because Python programming is a **skill**, I think that frequent labs and problem sets serve these goals much more effectively than a single midterm or final exam.
 
 
+### How do I access and submit assignments?
+
+Check out the [page on DataHub](datahub) for more information.
+
