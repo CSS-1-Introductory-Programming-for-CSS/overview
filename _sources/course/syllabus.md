@@ -59,22 +59,24 @@ Your grade will be determined by three kinds of assessments: [coding labs](../la
 
 ### Letter Grades
 
-If you're taking the course for a letter grade, your grade will be determined according to the scale below:
+If you're taking the course for a letter grade, your grade will be determined according to the scale below. 
+
+Note that the number on the **right-hand** side of the range is *not included* in that range: that is, an "A-" ranges from 90% all the way to 91.99% but does not include 93% (93% is an A).
 
  <span>Percentage</span>        | <span>Letter Grade</span>
 ----------------------|----------------
-97-100%  | A+
-93-96%   | A
-90-92%   | A-
-87-89%   | B+
-83-86%   | B
-80-82%   | B-
-77-79%   | C+
-73-76%   | C
-70-72%   | C-
-67-69%   | D+
-63-66%   | D
-60-62%   | D-
+97%+  | A+
+93-97%   | A
+90-93%   | A-
+87-90%   | B+
+83-87%   | B
+80-83%   | B-
+77-80%   | C+
+73-77%   | C
+70-73%   | C-
+67-79%   | D+
+63-67%   | D
+60-63%   | D-
 <60%     | F
 
 
