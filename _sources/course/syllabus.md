@@ -30,7 +30,7 @@ By the end of this course, you should be able to:
 | ---- | ----- | ------ |
 | Sean Trott | Monday 10-11 | CSB Courtyard |
 | Pulkit Agrawal  | ? | ? |
-| Nikolay Kudrin  | ? | ? |
+| Nikolay Kudrin  | Thursday 4-5 | Zoom (link on Canvas) |
 | Purva Kothari  | ? | ? |
 | Simran Barnwal | ? | ? |
 
