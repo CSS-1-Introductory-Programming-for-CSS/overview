@@ -31,7 +31,7 @@ By the end of this course, you should be able to:
 | Sean Trott | Monday 10-11 | CSB Courtyard |
 | Pulkit Agrawal  | ? | ? |
 | Nikolay Kudrin  | Thursday 4-5 | Zoom (link on Canvas) |
-| Purva Kothari  | ? | ? |
+| Purva Kothari  | Monday 12-1 | Zoom (https://ucsd.zoom.us/j/93025194368) |
 | Simran Barnwal | ? | ? |
 
 
@@ -39,10 +39,10 @@ By the end of this course, you should be able to:
 
 - Lecture: MWF 9-10 AM, Center 212 (also podcasted).
 - Coding Lab Sections (ERCA 117):
-  - Tuesday, 12-1:50, 2-3:50
-  - Wednesday: 1-2:50
-  - Friday: 12:-1:50
-
+  - Tuesday, 12-1:50 (Nikolay)
+  - Tuesday, 2-3:50 (Purva)
+  - Wednesday: 1-2:50 (Pulkit)
+  - Friday: 12-1:50 (Simran)
 
 ## Grading
 
