@@ -14,7 +14,7 @@ Note that this schedule is **aspirational** and is therefore **subject to change
 | **Week 2** | | |
 | M-10-03-2022 | Control Flow: Conditionals | Lab 1 due|
 | W-10-05-2022 | Control Flow: Loops | |
-| F-10-07-2022 | Control Flow: Loops | Lab 2 due |
+| F-10-07-2022 | Control Flow: Loops | |
 | **Week 3** | | |
 | M-10-10-2022 | Strings (Basics) | Lab 2 due  |
 | W-10-12-2022 | Strings (Advanced) | **PS 1 due** |
