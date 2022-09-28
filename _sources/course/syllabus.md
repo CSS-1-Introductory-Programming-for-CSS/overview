@@ -32,7 +32,7 @@ By the end of this course, you should be able to:
 | Pulkit Agrawal  | ? | ? |
 | Nikolay Kudrin  | Thursday 4-5 | Zoom (link on Canvas) |
 | Purva Kothari  | Monday 12-1 | Zoom (https://ucsd.zoom.us/j/93025194368) |
-| Simran Barnwal | ? | ? |
+| Simran Barnwal | Thursday 2-3 | Zoom (https://ucsd.zoom.us/j/94386977492) |
 
 
 ### When/Where?:
