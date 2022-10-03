@@ -96,6 +96,11 @@ Note that my policy is *not* to round up grades for two reasons:
 2. If rounding is applied across the board, it simply redefines the boundary between two letter grades (e.g., making an 89% the cut-off for an A-).
 
 
+### Late submissions
+
+Students may submit late assignments up to 48 hours after the submission deadline, for 75% credit of what you would've received (i.e., if you scored 90%, you'd get 67.5% with the late penalty).
+
+
 ## Questions, feedback, and communication
 
 Instructors can be reached in the following ways:
