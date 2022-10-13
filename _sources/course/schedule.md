@@ -49,4 +49,4 @@ Note that this schedule is **aspirational** and is therefore **subject to change
 | F-12-02-2022 | Useful Packages and Tools |  | |
 | **Finals Week** | | | |
 | M-12-05-2022 | | Lab 10 due | |
-| W-12-07-2022 | | Final Project due | |
+| W-12-07-2022 | | **Final Project due** | |
