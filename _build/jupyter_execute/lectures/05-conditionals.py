@@ -3,6 +3,12 @@
 
 # # Control Flow: Conditionals
 
+# ## Announcements
+# 
+# - Lab 2 is due **next Monday**.  
+# - Problem set 1 is due **next Wednesday**.
+# - Quick check-in: https://forms.gle/n48nBZYM8XsHf35g6
+
 # ## Goals of this lecture
 # 
 # - What is "control flow"?  
@@ -169,7 +175,7 @@ print("This will execute regardless.")
 # 
 # Which lines in the code below would actually print?
 # 
-# ```
+# ```python
 # condition = False
 # if condition:
 #     print("Do this if the condition is TRUE.")
@@ -212,7 +218,7 @@ elif condition2:
 
 # #### `if` vs. `elif`
 # 
-# The key difference two `if` statements in a row vs. an `if/elif` statement is:
+# The key difference between two `if` statements in a row vs. an `if/elif` statement is:
 # 
 # - The code under both `if` statements can run if both statements are `True`.  
 # - The code under an `elif` statement will only run if the `if` statement is False.

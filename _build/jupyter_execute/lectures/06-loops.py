@@ -3,6 +3,12 @@
 
 # # Control Flow: Loops
 
+# ## Announcements
+# 
+# - Lab 1 due today.  
+# - PS 1 due Wednesday.  
+# - Final projects: will be like a longer problem set, with more coherent questions.
+
 # ## Goals of this lecture
 # 
 # - Control flow, revisited.  
@@ -95,7 +101,7 @@ for number in numbers:
 # 
 # What do you expect the following code block to do, if you executed it?
 # 
-# ```
+# ```python
 # for l in "apple":
 #     print(l)
 # ```

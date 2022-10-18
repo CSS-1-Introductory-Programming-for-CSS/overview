@@ -3,6 +3,35 @@
 
 # # 02-Tooling
 
+# ## Addressing Q/A
+# 
+# **Question**: What is Piazza?
+# **Answer**: Piazza is a way to ask questions about course content. In general, we prefer questions over Piazza than email. The course Piazza can be found here: https://piazza.com/class?nid=l88zbj22p6w26z
+# 
+# **Question**: People are talking about DataHub, labs, etc. I feel a little behind because I don't know what they're referring to.  
+# **Answer**: I know it can feel overwhelming, but we're going to start covering those details today. *No labs or assignments have been relased yet, so don't worry that you've missed anything.*
+# 
+# **Question**: What is DataHub? How do I login?  
+# **Answer**: DataHub is a way to use Jupyter notebooks (and more) through UCSD server infrastructure. We'll talk about that more today. You *should* be able to login using your student-sign on (SSO). **Note that if DataHub continues to have issues, we will extend the deadline for the first lab!**
+# 
+# **Question**: Where will I find assignments?  
+# **Answer**: Assignments will be released through DataHub. We have a guide on the website for **fetching** and **submitting assignments** but 
+# 
+# **Question**: I'm on the waitlist. Can/will I get into the class?  
+# **Answer**: I don't have direct control over the waitlist. I've contacted the CSS administration about this and will keep you updated; if you have questions, I recommend contacting CSS staff.
+
+# ## Office Hours
+# 
+# My office hours will be: 
+# 
+# - When: Monday, 10-11 AM (after class).
+# - Where: CSB courtyard. 
+# 
+# TA Office hours:
+# 
+# - Nikolay Kudrin: 4-5pm (Zoom/remote). 
+# - (Others updated shortly)
+
 # ## Goals of this lecture
 # 
 # In this lecture, we'll discuss some of the key **software tools** we'll be using throughout the course.
@@ -26,7 +55,7 @@
 
 # ## Tool 1: Python
 
-# ![title](../img/lectures/intro/python_logo.png)
+# ![title](img/python_logo.png)
 
 # ### What is Python?
 # 
@@ -128,7 +157,7 @@ np.mean([2, 6, 8, 10]) ### Example function with numpy
 
 # ### Check-in
 # 
-# What creates a bigger heading, `#heading 1` vs. `#heading 2`?
+# What creates a bigger heading, `#heading 1` vs. `##heading 2`?
 
 # (If you're following along with Jupyter notebook, modify this cell to check.)
 

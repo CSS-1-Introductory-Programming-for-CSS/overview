@@ -3,6 +3,12 @@
 
 # # Strings in Python
 
+# ## Announcements
+# 
+# - Lab 1 grades posted. 
+# - Lab 2 grades will be posted by early next week. 
+# - Please direct grade questions to me (or TAs) in office hours or Piazza.
+
 # ## Goals of this lecture
 # 
 # - What is a **string** (`str`) type? 

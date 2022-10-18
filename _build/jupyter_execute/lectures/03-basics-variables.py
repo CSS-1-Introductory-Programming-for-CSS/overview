@@ -3,6 +3,14 @@
 
 # # Python Basics: Variables
 
+# ### Announcements
+# 
+# - **Extra credit survey** is due today (already lots of responses, so thank you!). 
+# - For people with trouble logging into DataHub (i.e., a **network error**), try the following:
+#    - Visit this page: https://datahub.ucsd.edu/hub/spawn
+#    - Click "Services" --> "manual-resetter" --> follow instructions.
+#    - (This has worked for us and also students we've suggested it to.)
+
 # ## Goals of this lecture
 # 
 # In this lecture, we'll introduce the concept of a **variable**.
@@ -11,11 +19,35 @@
 # - What do we use it for?  
 # - How does it work?  
 
+# In[1]:
+
+
+99 % 2
+
+
+# In[2]:
+
+
+3 != 5
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
 # ## Python expressions
 # 
 # An **expression** is just a block of code, e.g.,
 # 
-# ```
+# ```python
 # a = 1
 # b = 2
 # c = a + b
@@ -32,28 +64,28 @@
 # - Some kinds of code will be interpreted "literally" by Python.  
 # - A [literal](https://www.scaler.com/topics/python/literals-in-python/) is a kind of object/quantity whose value does not change during the execution of a program (i.e., these are *not* variables).  
 
-# In[1]:
+# In[3]:
 
 
 ## Literals can be numbers
 2
 
 
-# In[2]:
+# In[4]:
 
 
 # Or strings
 "Hello, world!"
 
 
-# In[3]:
+# In[5]:
 
 
 # Or a "boolean"
 True
 
 
-# In[4]:
+# In[6]:
 
 
 # Or even the special value "None"
@@ -74,7 +106,7 @@ None
 # 
 # 
 
-# In[5]:
+# In[7]:
 
 
 ## This assigns the variable name "example_var" to the value 1.
@@ -82,7 +114,7 @@ example_var = 1
 example_var
 
 
-# In[6]:
+# In[8]:
 
 
 ## This assigns the variable name "example_var" to the value 1.
@@ -94,19 +126,31 @@ example_var2
 # 
 # What happens to the value of the variable `test_var` if we run the following code? Feel free to run it in the Jupyter notebook if you're not sure.
 # 
-# ```
+# ```python
 # test_var = 3
 # test_var = test_var + 4
 # ```
+
+# In[9]:
+
+
+## Your code here
+
 
 # ### Check-in
 # 
 # What happens to the value of the variable `test_var` if we run this code? Feel free to run it in the Jupyter notebook if you're not sure.
 # 
-# ```
+# ```python
 # test_var = 3
 # test_var = test_var + new_var
 # ```
+
+# In[10]:
+
+
+## Your code here
+
 
 # ### Quick detour: Exceptions and Errors
 # 
@@ -117,7 +161,7 @@ example_var2
 #    - Even if our code is formatted correctly, other errors can arise, such as a `NameError`.  
 # - When an error arises, Python will give us a message indicating the type and source of the error.
 
-# In[7]:
+# In[11]:
 
 
 # This code is referencing "new_var", which hasn't been defined
@@ -132,7 +176,7 @@ test_var + new_var
 # 
 # Multiple variables can be assigned in a single line:
 # 
-# ```
+# ```python
 # test_var = new_var = 2
 # ```
 # 
@@ -140,7 +184,7 @@ test_var + new_var
 # 
 # Note that the order of these terms matters:
 # 
-# ```
+# ```python
 # test_var = 2   # This is okay!
 # 2 = test_var   # This is not okay!
 # ```
@@ -170,7 +214,7 @@ test_var + new_var
 # - `True` is a boolean type (as opposed to `False`).  
 # - `for` is a way to start a `for` loop (more on this later).   
 
-# In[17]:
+# In[8]:
 
 
 ## This yields a SyntaxError
@@ -183,7 +227,7 @@ for = 3
 # 
 # Recall that *assignment* creates a symbolic name that *points* to a particular value:
 # 
-# ```
+# ```python
 # new_var = 2
 # ```
 # 
@@ -202,7 +246,7 @@ for = 3
 # 
 # What happens when you type in `whos?` And what does that `Type` column mean?
 
-# In[21]:
+# In[9]:
 
 
 whos
@@ -247,7 +291,7 @@ whos
 # - Booleans will become very important when we want to use **conditional statements**, e.g., "if X, do Y...".  
 # - When you check for equality using `==`, the output is a boolean.
 
-# In[26]:
+# In[10]:
 
 
 ### Checking for equality
@@ -259,19 +303,19 @@ whos
 # If you're not sure what the **type** of a variable is, you can use the `type` function.
 # 
 
-# In[23]:
+# In[11]:
 
 
 type(2)
 
 
-# In[24]:
+# In[12]:
 
 
 type(2.77)
 
 
-# In[25]:
+# In[13]:
 
 
 type("some words")
@@ -296,7 +340,7 @@ type("some words")
 # - `x = int(1)` will ensure that `x` is an `int`.  
 # - `x = str(1)` will ensure that `x` is a `str`.  
 
-# In[29]:
+# In[14]:
 
 
 x = str(1)
@@ -367,22 +411,34 @@ type(numeric_int)
 # 
 # Will the code below run successfully without an error? If so, what is the value of `c`?
 # 
-# ```
+# ```python
 # a = 1
 # b = 'new'
 # c = a + b
 # ```
 
+# In[17]:
+
+
+### Your code here
+
+
 # ### Check-in
 # 
 # Will the code below run successfully without an error? If so, what is the value of `c`?
 # 
-# ```
+# ```python
 # a = 1
 # b = 'new'
 # a = str(a)
-# c = 1 + b
+# c = a + b
 # ```
+
+# In[21]:
+
+
+### Your code here
+
 
 # ### Using `print` to debug
 # 
@@ -390,7 +446,7 @@ type(numeric_int)
 # 
 # This helps us **isolate** where exactly the code is going wrong.
 
-# In[52]:
+# In[22]:
 
 
 a = 1

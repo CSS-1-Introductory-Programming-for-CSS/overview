@@ -231,6 +231,31 @@ const thebe_selector_output = ".output, .cell_output"
    17-Reading Text Files
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18-reading-advanced.html">
+   18-Working with Text Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="19-reading-json.html">
+   19-Reading JSON Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20-numpy.html">
+   20-Numpy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21-numpy-advanced.html">
+   21-Numpy (Advanced)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22-pandas.html">
+   21-Pandas
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -437,6 +462,11 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#announcements">
+   Announcements
+  </a>
+ </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#goals-of-this-lecture">
    Goals of this lecture
@@ -749,6 +779,11 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#announcements">
+   Announcements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#goals-of-this-lecture">
    Goals of this lecture
   </a>
@@ -1052,6 +1087,14 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="control-flow-conditionals">
 <h1>Control Flow: Conditionals<a class="headerlink" href="#control-flow-conditionals" title="Permalink to this headline">#</a></h1>
+<section id="announcements">
+<h2>Announcements<a class="headerlink" href="#announcements" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Lab 2 is due <strong>next Monday</strong>.</p></li>
+<li><p>Problem set 1 is due <strong>next Wednesday</strong>.</p></li>
+<li><p>Quick check-in: <a class="reference external" href="https://forms.gle/n48nBZYM8XsHf35g6">https://forms.gle/n48nBZYM8XsHf35g6</a></p></li>
+</ul>
+</section>
 <section id="goals-of-this-lecture">
 <h2>Goals of this lecture<a class="headerlink" href="#goals-of-this-lecture" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
@@ -1285,7 +1328,7 @@ This will execute regardless.
 <section id="id3">
 <h3>Check-in<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
 <p>Which lines in the code below would actually print?</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">condition</span> <span class="o">=</span> <span class="kc">False</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">condition</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Do this if the condition is TRUE.&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
@@ -1340,7 +1383,7 @@ This will execute regardless.
 </div>
 <section id="if-vs-elif">
 <h4><code class="docutils literal notranslate"><span class="pre">if</span></code> vs. <code class="docutils literal notranslate"><span class="pre">elif</span></code><a class="headerlink" href="#if-vs-elif" title="Permalink to this headline">#</a></h4>
-<p>The key difference two <code class="docutils literal notranslate"><span class="pre">if</span></code> statements in a row vs. an <code class="docutils literal notranslate"><span class="pre">if/elif</span></code> statement is:</p>
+<p>The key difference between two <code class="docutils literal notranslate"><span class="pre">if</span></code> statements in a row vs. an <code class="docutils literal notranslate"><span class="pre">if/elif</span></code> statement is:</p>
 <ul class="simple">
 <li><p>The code under both <code class="docutils literal notranslate"><span class="pre">if</span></code> statements can run if both statements are <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
 <li><p>The code under an <code class="docutils literal notranslate"><span class="pre">elif</span></code> statement will only run if the <code class="docutils literal notranslate"><span class="pre">if</span></code> statement is False.</p></li>

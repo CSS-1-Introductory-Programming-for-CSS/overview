@@ -197,6 +197,18 @@ while i < len(core_courses):
     i += 1 ## Make sure to increase index!
 
 
+# ### `enumerate`
+# 
+# The `enumerate` function allows you to iterate through a list, as in a `for` loop, but it *also* tracks an index.
+
+# In[17]:
+
+
+for index, item in enumerate(core_courses):
+    print(index)
+    print(item)
+
+
 # ## List "comprehensions"
 # 
 # > In Python, a [list comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp) is a shorter, more efficient way to loop through a `list` (and possibly apply some function to each element of a list). 
@@ -208,7 +220,7 @@ while i < len(core_courses):
 # 
 # A list comprehension will **return** another `list`, which has been modified in some way.
 
-# In[17]:
+# In[18]:
 
 
 ### The simplest list comprehension simply returns every element in a list
@@ -227,7 +239,7 @@ new_list
 # 
 # In the code below, the list comprehension returns the elements of the original `1ist`, but converts them all to `upper`case.
 
-# In[18]:
+# In[19]:
 
 
 ### Make everything upper-case.
@@ -240,7 +252,7 @@ new_list
 # 
 # You can also **conditionally modify** (or **conditionally return**) elements of a list using a `list` comprehension.
 
-# In[19]:
+# In[20]:
 
 
 ### List of foods
@@ -254,7 +266,7 @@ foods_with_i
 # 
 # The `list` below contains both `int` and `str` objects. Use a list comprehension to multiply each `int` by 2, and ignore the `str` objects.
 
-# In[20]:
+# In[21]:
 
 
 ### List of objects
@@ -266,7 +278,7 @@ assorted_list = [1, 5, "bottle", 10, "bag"]
 # 
 # The `list` below contains both `int` and `str` objects. Now, use a list comprehension to turn each `str` into an upper-case string, and ignore the `int` objects.
 
-# In[21]:
+# In[22]:
 
 
 ### List of objects
@@ -280,13 +292,13 @@ assorted_list = [1, 5, "bottle", 10, "bag"]
 # 
 # Note that this can be used with **strings** as well.
 
-# In[22]:
+# In[23]:
 
 
 "CSS 1" in core_courses
 
 
-# In[23]:
+# In[24]:
 
 
 "COGS 14B" in core_courses
@@ -296,7 +308,7 @@ assorted_list = [1, 5, "bottle", 10, "bag"]
 # 
 # Consider `my_long_list` below. How would you check whether the `str` `"words"` appears in that `list`?
 
-# In[24]:
+# In[25]:
 
 
 my_long_list = ["this", "is", "a", "set", "of", "words", "I", "made", "up"]

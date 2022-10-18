@@ -25,7 +25,7 @@
 # - Coding Lab Sections (ERCA 117): 
 #    - Tuesday, 12-1:50, 2-3:50
 #    - Wednesday: 1-2:50
-#    - Friday: 12:-1:50
+#    - Friday: 12-1:50
 #    
 # [**Course Website**](https://ucsd-css1-introduction.github.io/overview/intro.html).
 # 
@@ -151,11 +151,11 @@ variable_integer2 + variable_integer1
 
 # ### Course Structure
 # 
-# Class time is divided into *lecture* and *section*.
+# Class time is divided into *lecture* and *lab*.
 # 
 # - Lecture is a time to **introduce**, **explain**, and **demonstrate** new concepts.  
 #   - There will be a focus on **hands-on practice** (i.e., "check-ins"). 
-# - Section is a time to **practice** and **develop further fluency** with these concepts.  
+# - Lab is a time to **practice** and **develop further fluency** with these concepts.  
 # 
 
 # ### Following along in lecture
@@ -165,6 +165,17 @@ variable_integer2 + variable_integer1
 # - The lectures can all be found on GitHub, and downloaded or **cloned** into your DataHub account: 
 #    - Link: https://github.com/UCSD-CSS1-Introduction/lectures
 #    - We'll review exactly how to do that in class.
+
+# ### Lab
+# 
+# - Lab will be a time to get **hands-on** practice with course concepts.
+# - Each week (except Week 0) will have a *Coding Lab* assignment.
+#   - Altogether these assignments are worth 50% of your grade.
+#   - You can work collaboratively on Coding Labs during lab time.
+# - Lab attendance is helpful, but not required.
+#   - As long as labs don't get too crowded, you can go to whichever lab you prefer.
+# 
+# **Note**: For the first two weeks, the **Wednesday lab** will be remote (hosted by Pulkit).
 
 # ### Overview of topics
 # 
@@ -195,7 +206,7 @@ variable_integer2 + variable_integer1
 
 # ### Grading and Assessments
 # 
-# - Each week (except Week 0) will have a **coding lab** due Friday.
+# - Each week (except Week 0) will have a **coding lab** due the following Monday.
 # - There are also **four problem sets**, which will be auto-graded.
 # - There is also a **final project**––like a big, more coherent problem set.
 # 

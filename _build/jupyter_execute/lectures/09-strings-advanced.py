@@ -3,6 +3,15 @@
 
 # # Strings in Python (continued)
 
+# ## Announcements
+# 
+# - Grade posting:
+#   - Lab 2 grades posted.
+#   - PS 1 grades will be posted tomorrow at the latest.  
+# - New assignments:
+#   - Lab 4 released today.  
+#   - PS 2 released today.
+
 # ## Review: strings
 # 
 # > A **string** is a *sequence* of characters. It belongs to the `str` type in Python.

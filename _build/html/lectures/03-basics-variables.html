@@ -231,6 +231,31 @@ const thebe_selector_output = ".output, .cell_output"
    17-Reading Text Files
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18-reading-advanced.html">
+   18-Working with Text Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="19-reading-json.html">
+   19-Reading JSON Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20-numpy.html">
+   20-Numpy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21-numpy-advanced.html">
+   21-Numpy (Advanced)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22-pandas.html">
+   21-Pandas
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -438,6 +463,11 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#announcements">
+   Announcements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#goals-of-this-lecture">
    Goals of this lecture
   </a>
@@ -644,6 +674,11 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#announcements">
+   Announcements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#goals-of-this-lecture">
    Goals of this lecture
   </a>
@@ -842,6 +877,19 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="python-basics-variables">
 <h1>Python Basics: Variables<a class="headerlink" href="#python-basics-variables" title="Permalink to this headline">#</a></h1>
+<section id="announcements">
+<h2>Announcements<a class="headerlink" href="#announcements" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><strong>Extra credit survey</strong> is due today (already lots of responses, so thank you!).</p></li>
+<li><p>For people with trouble logging into DataHub (i.e., a <strong>network error</strong>), try the following:</p>
+<ul>
+<li><p>Visit this page: <a class="reference external" href="https://datahub.ucsd.edu/hub/spawn">https://datahub.ucsd.edu/hub/spawn</a></p></li>
+<li><p>Click “Services” –&gt; “manual-resetter” –&gt; follow instructions.</p></li>
+<li><p>(This has worked for us and also students we’ve suggested it to.)</p></li>
+</ul>
+</li>
+</ul>
+</section>
 <section id="goals-of-this-lecture">
 <h2>Goals of this lecture<a class="headerlink" href="#goals-of-this-lecture" title="Permalink to this headline">#</a></h2>
 <p>In this lecture, we’ll introduce the concept of a <strong>variable</strong>.</p>
@@ -850,11 +898,35 @@ title="Print to PDF"
 <li><p>What do we use it for?</p></li>
 <li><p>How does it work?</p></li>
 </ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">99</span> <span class="o">%</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">!=</span> <span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="python-expressions">
 <h2>Python expressions<a class="headerlink" href="#python-expressions" title="Permalink to this headline">#</a></h2>
 <p>An <strong>expression</strong> is just a block of code, e.g.,</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </pre></div>
@@ -966,17 +1038,31 @@ title="Print to PDF"
 <section id="id1">
 <h3>Check-in<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 <p>What happens to the value of the variable <code class="docutils literal notranslate"><span class="pre">test_var</span></code> if we run the following code? Feel free to run it in the Jupyter notebook if you’re not sure.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">test_var</span> <span class="o">=</span> <span class="mi">3</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">test_var</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">test_var</span> <span class="o">=</span> <span class="n">test_var</span> <span class="o">+</span> <span class="mi">4</span>
 </pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Your code here</span>
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="id2">
 <h3>Check-in<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
 <p>What happens to the value of the variable <code class="docutils literal notranslate"><span class="pre">test_var</span></code> if we run this code? Feel free to run it in the Jupyter notebook if you’re not sure.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">test_var</span> <span class="o">=</span> <span class="mi">3</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">test_var</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">test_var</span> <span class="o">=</span> <span class="n">test_var</span> <span class="o">+</span> <span class="n">new_var</span>
 </pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Your code here</span>
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="quick-detour-exceptions-and-errors">
@@ -1002,7 +1088,7 @@ title="Print to PDF"
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">Input In [7],</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
+<span class="nn">Input In [11],</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># This code is referencing &quot;new_var&quot;, which hasn&#39;t been defined</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">test_var</span> <span class="o">+</span> <span class="n">new_var</span>
 
@@ -1019,12 +1105,12 @@ title="Print to PDF"
 <li><p>The <code class="docutils literal notranslate"><span class="pre">==</span></code> operator is a test for equality (e.g., <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">==</span> <span class="pre">(2</span> <span class="pre">-</span> <span class="pre">1)</span></code>).</p></li>
 </ul>
 <p>Multiple variables can be assigned in a single line:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">test_var</span> <span class="o">=</span> <span class="n">new_var</span> <span class="o">=</span> <span class="mi">2</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">test_var</span> <span class="o">=</span> <span class="n">new_var</span> <span class="o">=</span> <span class="mi">2</span>
 </pre></div>
 </div>
 <p>The Python <strong>interpreter</strong> will always start with the rightmost value (e.g., <code class="docutils literal notranslate"><span class="pre">2</span></code>), then proceed to the left.</p>
 <p>Note that the order of these terms matters:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">test_var</span> <span class="o">=</span> <span class="mi">2</span>   <span class="c1"># This is okay!</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">test_var</span> <span class="o">=</span> <span class="mi">2</span>   <span class="c1"># This is okay!</span>
 <span class="mi">2</span> <span class="o">=</span> <span class="n">test_var</span>   <span class="c1"># This is not okay!</span>
 </pre></div>
 </div>
@@ -1069,7 +1155,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Input</span> <span class="n">In</span> <span class="p">[</span><span class="mi">17</span><span class="p">]</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Input</span> <span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]</span>
     <span class="k">for</span> <span class="o">=</span> <span class="mi">3</span>
         <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -1083,7 +1169,7 @@ title="Print to PDF"
 <h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">#</a></h2>
 <p>A <a class="reference external" href="https://realpython.com/python-namespaces-scope/"><strong>namespace</strong></a> is the “space” where a given set of variable names have been <em>declared</em>.</p>
 <p>Recall that <em>assignment</em> creates a symbolic name that <em>points</em> to a particular value:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">new_var</span> <span class="o">=</span> <span class="mi">2</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">new_var</span> <span class="o">=</span> <span class="mi">2</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -1113,8 +1199,6 @@ title="Print to PDF"
 --------------------------------
 example_var    int     1
 example_var2   str     This is a string
-new_var        int     2
-test_var       int     2
 </pre></div>
 </div>
 </div>
@@ -1371,20 +1455,34 @@ test_var       int     2
 <section id="id5">
 <h3>Check-in<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
 <p>Will the code below run successfully without an error? If so, what is the value of <code class="docutils literal notranslate"><span class="pre">c</span></code>?</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;new&#39;</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### Your code here</span>
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="id6">
 <h3>Check-in<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
 <p>Will the code below run successfully without an error? If so, what is the value of <code class="docutils literal notranslate"><span class="pre">c</span></code>?</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;new&#39;</span>
 <span class="n">a</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="n">c</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">b</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### Your code here</span>
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="using-print-to-debug">
@@ -1411,7 +1509,7 @@ test_var       int     2
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">Input In [52],</span> in <span class="ni">&lt;cell line: 7&gt;</span><span class="nt">()</span>
+<span class="nn">Input In [22],</span> in <span class="ni">&lt;cell line: 7&gt;</span><span class="nt">()</span>
 <span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">c</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
 <span class="ne">----&gt; </span><span class="mi">7</span> <span class="n">d</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">c</span>

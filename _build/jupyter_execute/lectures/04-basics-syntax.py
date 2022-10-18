@@ -3,6 +3,13 @@
 
 # # Python Basics: Operators and Syntax
 
+# ## Announcements
+# 
+# - **Lab 1** due today.
+# - **Problem set 1** will be released today (due *next Wednesday*).
+#   - Similar to Lab 1, but to be completed independently.
+# - **Lab 2** will also be released by end of day (due *next Monday*).  
+
 # ## Goals of this lecture
 # 
 # - What is syntax?
@@ -16,7 +23,7 @@
 
 # ## Python Syntax: Overview
 # 
-# The [**syntax** of a programming language](https://en.wikipedia.org/wiki/Syntax_(programming_languages)) is the set of rules about how different symbols can be combined to produce correctly structured statements.  
+# The **syntax** of a programming language is the set of rules about how different symbols can be combined to produce correctly structured statements.  
 # 
 # Like other programming languages, Python has particular **syntactic rules**.  
 # - Failure to follow these rules results in a `SyntaxError`.
@@ -92,17 +99,29 @@ x = 10
 # 
 # What value would `x` take on in the following code?
 # 
-# ```
+# ```python
 # x = (1 + 2) / (18 - 3)
 # ```
+
+# In[6]:
+
+
+### Your code here
+
 
 # ### Check-in
 # 
 # What about this code?
 # 
-# ```
+# ```python
 # x = 1 + 2 / 18 - 3
 # ```
+
+# In[7]:
+
+
+### Your code here
+
 
 # #### "Adding" strings
 # 
@@ -110,7 +129,7 @@ x = 10
 # 
 # We'll revisit this soon when we discuss strings in more depth.
 
-# In[6]:
+# In[8]:
 
 
 ### Addition "concatenates" strings
@@ -131,7 +150,7 @@ x = 10
 # 
 # These are equivalent to just writing out something like: `x = x + 1`.
 
-# In[7]:
+# In[9]:
 
 
 x = 10
@@ -150,19 +169,19 @@ x
 # | `not` | Returns the reverse | `not True`|
 # 
 
-# In[8]:
+# In[10]:
 
 
 True and False
 
 
-# In[9]:
+# In[11]:
 
 
 True or False
 
 
-# In[10]:
+# In[12]:
 
 
 True and (not False)
@@ -181,14 +200,14 @@ True and (not False)
 # | `>=` | Greater Than or Equal To|
 # | `<=` | Less Than or Equal To|
 
-# In[11]:
+# In[13]:
 
 
 ## Equal operator
 2 == (1 + 1)
 
 
-# In[12]:
+# In[14]:
 
 
 ## Greater than
@@ -202,21 +221,21 @@ True and (not False)
 # - The equality operator (`==`) tests whether the two strings have the same characters.  
 # - The greater/less than operators (`>` and `<`) test the relative *ordinal value* of the strings, i.e., if they were to be sorted.
 
-# In[13]:
+# In[15]:
 
 
 ## Are these strings equal?
 "test" == "test"
 
 
-# In[14]:
+# In[16]:
 
 
 ## Is b "larger" than a?
 "b" > "a"
 
 
-# In[15]:
+# In[17]:
 
 
 ## Is ab "larger" than aa?
@@ -227,9 +246,15 @@ True and (not False)
 # 
 # Would the following code return `True` or `False`?
 # 
-# ```
+# ```python
 # "bat" > "cat"
 # ```
+
+# In[18]:
+
+
+### Your code here
+
 
 # ### Identity operators
 # 
@@ -247,7 +272,7 @@ True and (not False)
 # - A test for **identity** (`is`) checks whether two operands point to the same *object* in memory.  
 #   - You don't need to know all the details here––the most important thing is that they're subtly different.
 
-# In[16]:
+# In[19]:
 
 
 # Comparing equality vs. identity
@@ -261,7 +286,7 @@ print(a is b)
 # 
 # Two variables can have the same **value** (they're *equal*), but reference different objects in **memory** (i.e., they're not *identical*). We can access the `id` of an object using `id(x)`. 
 
-# In[17]:
+# In[20]:
 
 
 x = 1000
@@ -278,7 +303,7 @@ print(x is y)
 # - Integers between `-5` and `256`
 # 
 
-# In[18]:
+# In[21]:
 
 
 x = 1
@@ -300,14 +325,14 @@ print(x == y)
 # 
 # This will become clearer when we discuss different kinds of **sequences**, such as *strings* (`str`) and *lists* (`list`). For now, it's enough to compare/contrast the examples below.
 
-# In[19]:
+# In[22]:
 
 
 print("a" in "apple")
 print("b" in "apple")
 
 
-# In[20]:
+# In[23]:
 
 
 print("a" not in "apple")
@@ -322,14 +347,14 @@ print("b" not in "apple")
 # - This will make more sense when we discuss **conditional logic** (`if/else`) and **loops** (e.g., a `for` loop).  
 # - If you indent where it's not necessary or expected, you'll get a `SyntaxError`. 
 
-# In[21]:
+# In[24]:
 
 
 ## We shouldn't have indented here
     print("Don't indent here")
 
 
-# In[45]:
+# In[25]:
 
 
 ## It's appropriate to indent after a conditional statement

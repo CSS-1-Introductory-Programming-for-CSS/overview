@@ -21,7 +21,7 @@ nbclient.exceptions.CellExecutionError: An error occurred while executing the fo
     print("Don't indent here")
 ------------------
 
-[0;36m  Input [0;32mIn [21][0;36m[0m
+[0;36m  Input [0;32mIn [24][0;36m[0m
 [0;31m    print("Don't indent here")[0m
 [0m    ^[0m
 [0;31mIndentationError[0m[0;31m:[0m unexpected indent
