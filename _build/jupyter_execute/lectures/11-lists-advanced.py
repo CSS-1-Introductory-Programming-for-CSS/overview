@@ -3,6 +3,14 @@
 
 # # Lists in Python (advanced)
 
+# ## Announcements
+# 
+# - Due dates:
+#    - Lab 4 due today.
+#    - Problem set 2 due Wednesday.
+# - Lab 5 released today.  
+# - Will also hold office hours over Zoom today (will release link on Canvas).  
+
 # ## Review: `list`s
 # 
 # > A **list** is a collection of ordered items, which can have various `type`s. 

@@ -5,12 +5,31 @@
 
 # ## Announcements
 # 
-# - Grade posting:
-#   - Lab 2 grades posted.
-#   - PS 1 grades will be posted tomorrow at the latest.  
-# - New assignments:
-#   - Lab 4 released today.  
-#   - PS 2 released today.
+# - Announcement on how to write your answers for labs/problem sets.
+
+# ### Example
+# 
+# Suppose a problem asks you to calculate the `len` of `list_example` and store it in a variable called `length`.
+
+# In[1]:
+
+
+list_example = [5, 6, 10]
+
+
+# In[2]:
+
+
+### This is the wrong way to write your answer
+length = 3
+
+
+# In[3]:
+
+
+### This is the right way to write your answer
+length = len(list_example)
+
 
 # ## Review: strings
 # 
@@ -18,13 +37,13 @@
 # 
 # A string stores characters as text, and is created using single (`''`) or double (`""`) quotes; multi-line strings can be created with three quotes (`""" """`). 
 
-# In[1]:
+# In[4]:
 
 
 print("This is a string that I'm printing.")
 
 
-# In[2]:
+# In[5]:
 
 
 print("This is also a string, even though it has numbers like 2, 4, and 100 * 2.")
@@ -46,13 +65,13 @@ print("This is also a string, even though it has numbers like 2, 4, and 100 * 2.
 # - One use-case for this is needing to *compare* two strings, but not caring about whether they have identical case. 
 # - E.g., "APplE" is the same *word* as "apple", but these strings wouldn't evaluate as equal.
 
-# In[3]:
+# In[6]:
 
 
 "APPLE" == "apple"
 
 
-# In[4]:
+# In[7]:
 
 
 "apple" == "apple"
@@ -62,19 +81,19 @@ print("This is also a string, even though it has numbers like 2, 4, and 100 * 2.
 # 
 # As the names imply, `upper` and `lower` are both *functions* that you can use on a `str`.  
 
-# In[5]:
+# In[8]:
 
 
 "APPLE".lower()
 
 
-# In[6]:
+# In[9]:
 
 
 "apple".upper()
 
 
-# In[7]:
+# In[10]:
 
 
 "APPLE".lower() == "apple"
@@ -84,7 +103,7 @@ print("This is also a string, even though it has numbers like 2, 4, and 100 * 2.
 # 
 # The `title` function is a variant of `upper`/`lower`, which just capitalizes the *first* letter of each word.
 
-# In[8]:
+# In[11]:
 
 
 og_string = "introduction to programming for computational social science"
@@ -93,7 +112,7 @@ og_string.title()
 
 # Note that if you have capital letters *after* the first letter of a word, these will now become lowercase!
 
-# In[9]:
+# In[12]:
 
 
 og_string = "CSS"
@@ -110,19 +129,19 @@ og_string.title()
 # 
 # These functions all check whether a string conforms to those patterns.
 
-# In[10]:
+# In[13]:
 
 
 "CSS".isupper()
 
 
-# In[11]:
+# In[14]:
 
 
 "CSS".islower()
 
 
-# In[12]:
+# In[15]:
 
 
 "I Love Programming".istitle()
@@ -132,7 +151,7 @@ og_string.title()
 # 
 # If you called `istitle()` on the following string, would it evaluate to `True` or `False`?
 
-# In[13]:
+# In[16]:
 
 
 test_str = "I love CSS"
@@ -158,7 +177,7 @@ test_str = "I love CSS"
 # 
 # This can be done with the `replace` function.
 
-# In[14]:
+# In[17]:
 
 
 ## Replace "-" with "_"
@@ -170,7 +189,7 @@ og_filename.replace("-", "_")
 # 
 # `replace` can also be used to replace only the first $N$ instances of a string. 
 
-# In[15]:
+# In[18]:
 
 
 ## Replace only the first instance of "bananas"
@@ -182,7 +201,7 @@ og_string.replace("bananas", "oranges", 1)
 # 
 # Use the `replace` function to replace the **first 2 instances** of `-` with `_`.
 
-# In[16]:
+# In[19]:
 
 
 original_filename = "css-ps1-fa22-test.py"
@@ -196,7 +215,7 @@ original_filename = "css-ps1-fa22-test.py"
 # - This includes exact **case match**. 
 # - `"apple" != "APPLE"`. 
 
-# In[17]:
+# In[20]:
 
 
 case_mismatch = "I like Apples"
@@ -204,7 +223,7 @@ case_mismatch = "I like Apples"
 case_mismatch.replace("apples", "bananas")
 
 
-# In[18]:
+# In[21]:
 
 
 case_mismatch = "I like Apples"
@@ -226,13 +245,13 @@ case_mismatch.replace("Apples", "bananas")
 # 
 # The `+` operator can be used to **combine** multiple `str` objects.
 
-# In[19]:
+# In[22]:
 
 
 "Comput" + "ational"
 
 
-# In[20]:
+# In[23]:
 
 
 "css1/" + "lab1/" + "file.py"
@@ -250,7 +269,7 @@ case_mismatch.replace("Apples", "bananas")
 # 
 # If you want to add a space *between* these objects, make sure to add a space character in your concatenation operation.
 
-# In[21]:
+# In[24]:
 
 
 p1 = "Hello"
@@ -264,7 +283,7 @@ p1 + " " + p2
 # 
 # **Bonus**: What would you need to do to make it *not* throw an error?
 
-# In[22]:
+# In[25]:
 
 
 2 + " cats"

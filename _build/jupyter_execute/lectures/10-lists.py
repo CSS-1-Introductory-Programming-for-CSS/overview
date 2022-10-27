@@ -3,6 +3,10 @@
 
 # # Lists in Python
 
+# ## Announcements
+# 
+# - Quick discussion of class goals.
+
 # ## Goals of this lecture
 # 
 # The primary goal of today's lecture is to give you a basic familiarity with **lists** in Python. This includes:
