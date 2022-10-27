@@ -1242,12 +1242,12 @@ title="Print to PDF"
 </section>
 <section id="id4">
 <h4>Check-in<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h4>
-<p>Now let’s try to read in a <strong>new</strong> <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file. This one is also located in <code class="docutils literal notranslate"><span class="pre">data</span></code>, and it’s called <code class="docutils literal notranslate"><span class="pre">housing.csv</span></code>.</p>
+<p>Now let’s try to read in a <strong>new</strong> <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file. This one is also located in <code class="docutils literal notranslate"><span class="pre">data</span></code>, and it’s called <code class="docutils literal notranslate"><span class="pre">pokemon.csv</span></code>.</p>
 <ul class="simple">
-<li><p>The original data can be found on <a class="reference external" href="https://www.kaggle.com/datasets/camnugent/california-housing-prices?resource=download">Kaggle, a website for data science competitions</a>).</p></li>
-<li><p>It aggregates across houses on a <strong>block</strong>.</p></li>
+<li><p>The original data can be found on <a class="reference external" href="https://www.kaggle.com/code/ash316/learn-pandas-with-pokemons/data">Kaggle, a website for data science competitions</a>).</p></li>
+<li><p>It contains information about different <strong>Pokemon</strong>.</p></li>
 </ul>
-<p>Call the new <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> <code class="docutils literal notranslate"><span class="pre">df_housing</span></code>.</p>
+<p>Call the new <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> <code class="docutils literal notranslate"><span class="pre">df_pokemon</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### Your code here</span>
@@ -1260,8 +1260,8 @@ title="Print to PDF"
 <h4>Solution<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_housing</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/housing.csv&quot;</span><span class="p">)</span>
-<span class="n">df_housing</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_pokemon</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/pokemon.csv&quot;</span><span class="p">)</span>
+<span class="n">df_pokemon</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1284,44 +1284,53 @@ title="Print to PDF"
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>longitude</th>
-      <th>latitude</th>
-      <th>housing_median_age</th>
-      <th>total_rooms</th>
-      <th>total_bedrooms</th>
-      <th>population</th>
-      <th>households</th>
-      <th>median_income</th>
-      <th>median_house_value</th>
-      <th>ocean_proximity</th>
+      <th>#</th>
+      <th>Name</th>
+      <th>Type 1</th>
+      <th>Type 2</th>
+      <th>Total</th>
+      <th>HP</th>
+      <th>Attack</th>
+      <th>Defense</th>
+      <th>Sp. Atk</th>
+      <th>Sp. Def</th>
+      <th>Speed</th>
+      <th>Generation</th>
+      <th>Legendary</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>-122.23</td>
-      <td>37.88</td>
-      <td>41.0</td>
-      <td>880.0</td>
-      <td>129.0</td>
-      <td>322.0</td>
-      <td>126.0</td>
-      <td>8.3252</td>
-      <td>452600.0</td>
-      <td>NEAR BAY</td>
+      <td>1</td>
+      <td>Bulbasaur</td>
+      <td>Grass</td>
+      <td>Poison</td>
+      <td>318</td>
+      <td>45</td>
+      <td>49</td>
+      <td>49</td>
+      <td>65</td>
+      <td>65</td>
+      <td>45</td>
+      <td>1</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>-122.22</td>
-      <td>37.86</td>
-      <td>21.0</td>
-      <td>7099.0</td>
-      <td>1106.0</td>
-      <td>2401.0</td>
-      <td>1138.0</td>
-      <td>8.3014</td>
-      <td>358500.0</td>
-      <td>NEAR BAY</td>
+      <td>2</td>
+      <td>Ivysaur</td>
+      <td>Grass</td>
+      <td>Poison</td>
+      <td>405</td>
+      <td>60</td>
+      <td>62</td>
+      <td>63</td>
+      <td>80</td>
+      <td>80</td>
+      <td>60</td>
+      <td>1</td>
+      <td>False</td>
     </tr>
   </tbody>
 </table>
@@ -1329,12 +1338,12 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_housing</span><span class="o">.</span><span class="n">shape</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_pokemon</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(20640, 10)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(800, 13)
 </pre></div>
 </div>
 </div>
@@ -1489,11 +1498,11 @@ title="Print to PDF"
 </section>
 <section id="id6">
 <h3>Check-in<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
-<p>Use <code class="docutils literal notranslate"><span class="pre">sort_values</span></code> to find the block with the <em>lowest</em> <code class="docutils literal notranslate"><span class="pre">median_house_value</span></code>. Then, answer the following questions:</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">sort_values</span></code> to find the block with the <em>lowest</em> <code class="docutils literal notranslate"><span class="pre">HP</span></code>. Then, answer the following questions:</p>
 <ul class="simple">
-<li><p>What is the <code class="docutils literal notranslate"><span class="pre">ocean_proximity</span></code> of this block?</p></li>
-<li><p>What is the <code class="docutils literal notranslate"><span class="pre">median_income</span></code> of this block?</p></li>
-<li><p>How many <code class="docutils literal notranslate"><span class="pre">households</span></code> are on this block?</p></li>
+<li><p>What is the <code class="docutils literal notranslate"><span class="pre">Speed</span></code> of this Pokemon?</p></li>
+<li><p>What is the <code class="docutils literal notranslate"><span class="pre">Legendary</span></code> status of this Pokemon?</p></li>
+<li><p>What is the <code class="docutils literal notranslate"><span class="pre">Type</span> <span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">Type</span> <span class="pre">2</span></code> of this Pokemon?</p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1507,7 +1516,7 @@ title="Print to PDF"
 <h3>Solution<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_housing</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;median_house_value&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_pokemon</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;HP&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1530,31 +1539,37 @@ title="Print to PDF"
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>longitude</th>
-      <th>latitude</th>
-      <th>housing_median_age</th>
-      <th>total_rooms</th>
-      <th>total_bedrooms</th>
-      <th>population</th>
-      <th>households</th>
-      <th>median_income</th>
-      <th>median_house_value</th>
-      <th>ocean_proximity</th>
+      <th>#</th>
+      <th>Name</th>
+      <th>Type 1</th>
+      <th>Type 2</th>
+      <th>Total</th>
+      <th>HP</th>
+      <th>Attack</th>
+      <th>Defense</th>
+      <th>Sp. Atk</th>
+      <th>Sp. Def</th>
+      <th>Speed</th>
+      <th>Generation</th>
+      <th>Legendary</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>9188</th>
-      <td>-117.86</td>
-      <td>34.24</td>
-      <td>52.0</td>
-      <td>803.0</td>
-      <td>267.0</td>
-      <td>628.0</td>
-      <td>225.0</td>
-      <td>4.1932</td>
-      <td>14999.0</td>
-      <td>INLAND</td>
+      <th>316</th>
+      <td>292</td>
+      <td>Shedinja</td>
+      <td>Bug</td>
+      <td>Ghost</td>
+      <td>236</td>
+      <td>1</td>
+      <td>90</td>
+      <td>45</td>
+      <td>30</td>
+      <td>30</td>
+      <td>40</td>
+      <td>3</td>
+      <td>False</td>
     </tr>
   </tbody>
 </table>
@@ -1563,11 +1578,11 @@ title="Print to PDF"
 </section>
 <section id="id8">
 <h3>Check-in<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
-<p>Use <code class="docutils literal notranslate"><span class="pre">sort_values</span></code> to find the block with the <em>highest</em> <code class="docutils literal notranslate"><span class="pre">median_house_value</span></code>. Then, answer the following questions:</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">sort_values</span></code> to find the block with the <em>highest</em> <code class="docutils literal notranslate"><span class="pre">HP</span></code>. Then, answer the following questions:</p>
 <ul class="simple">
-<li><p>What is the <code class="docutils literal notranslate"><span class="pre">ocean_proximity</span></code> of this block?</p></li>
-<li><p>What is the <code class="docutils literal notranslate"><span class="pre">median_income</span></code> of this block?</p></li>
-<li><p>How many <code class="docutils literal notranslate"><span class="pre">households</span></code> are on this block?</p></li>
+<li><p>What is the <code class="docutils literal notranslate"><span class="pre">Speed</span></code> of this Pokemon?</p></li>
+<li><p>What is the <code class="docutils literal notranslate"><span class="pre">Legendary</span></code> status of this Pokemon?</p></li>
+<li><p>What is the <code class="docutils literal notranslate"><span class="pre">Type</span> <span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">Type</span> <span class="pre">2</span></code> of this Pokemon?</p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1581,7 +1596,7 @@ title="Print to PDF"
 <h3>Solution<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_housing</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;median_house_value&quot;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_pokemon</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;HP&quot;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1604,31 +1619,37 @@ title="Print to PDF"
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>longitude</th>
-      <th>latitude</th>
-      <th>housing_median_age</th>
-      <th>total_rooms</th>
-      <th>total_bedrooms</th>
-      <th>population</th>
-      <th>households</th>
-      <th>median_income</th>
-      <th>median_house_value</th>
-      <th>ocean_proximity</th>
+      <th>#</th>
+      <th>Name</th>
+      <th>Type 1</th>
+      <th>Type 2</th>
+      <th>Total</th>
+      <th>HP</th>
+      <th>Attack</th>
+      <th>Defense</th>
+      <th>Sp. Atk</th>
+      <th>Sp. Def</th>
+      <th>Speed</th>
+      <th>Generation</th>
+      <th>Legendary</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>10667</th>
-      <td>-117.88</td>
-      <td>33.55</td>
-      <td>27.0</td>
-      <td>2278.0</td>
-      <td>316.0</td>
-      <td>772.0</td>
-      <td>304.0</td>
-      <td>10.1275</td>
-      <td>500001.0</td>
-      <td>&lt;1H OCEAN</td>
+      <th>261</th>
+      <td>242</td>
+      <td>Blissey</td>
+      <td>Normal</td>
+      <td>NaN</td>
+      <td>540</td>
+      <td>255</td>
+      <td>10</td>
+      <td>10</td>
+      <td>75</td>
+      <td>135</td>
+      <td>55</td>
+      <td>2</td>
+      <td>False</td>
     </tr>
   </tbody>
 </table>
@@ -1719,7 +1740,7 @@ Name: Score, dtype: float64
 </section>
 <section id="id10">
 <h3>Check-in<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h3>
-<p>What is the mean number of <code class="docutils literal notranslate"><span class="pre">households</span></code> per block in our housing dataset? What about the minimum and maximum?</p>
+<p>What is the mean <code class="docutils literal notranslate"><span class="pre">HP</span></code> in our Pokemon dataset? What about the minimum and maximum?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### Your code here</span>
@@ -1732,16 +1753,16 @@ Name: Score, dtype: float64
 <h3>Solution<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_housing</span><span class="p">[</span><span class="s1">&#39;households&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df_housing</span><span class="p">[</span><span class="s1">&#39;households&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df_housing</span><span class="p">[</span><span class="s1">&#39;households&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_pokemon</span><span class="p">[</span><span class="s1">&#39;HP&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_pokemon</span><span class="p">[</span><span class="s1">&#39;HP&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_pokemon</span><span class="p">[</span><span class="s1">&#39;HP&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>499.5396802325581
-6082.0
-1.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>69.25875
+255
+1
 </pre></div>
 </div>
 </div>
@@ -1749,7 +1770,7 @@ Name: Score, dtype: float64
 </section>
 <section id="id12">
 <h3>Check-in<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h3>
-<p>What is the mean <code class="docutils literal notranslate"><span class="pre">median_income</span></code> per block in our housing dataset? What about the minimum and maximum?</p>
+<p>What is the mean <code class="docutils literal notranslate"><span class="pre">Attack</span></code> Pokemon dataset? What about the minimum and maximum?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### Your code here</span>
@@ -1762,16 +1783,16 @@ Name: Score, dtype: float64
 <h3>Solution<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_housing</span><span class="p">[</span><span class="s1">&#39;median_income&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df_housing</span><span class="p">[</span><span class="s1">&#39;median_income&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df_housing</span><span class="p">[</span><span class="s1">&#39;median_income&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_pokemon</span><span class="p">[</span><span class="s1">&#39;Attack&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_pokemon</span><span class="p">[</span><span class="s1">&#39;Attack&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_pokemon</span><span class="p">[</span><span class="s1">&#39;Attack&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.8706710029070246
-15.0001
-0.4999
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>79.00125
+190
+5
 </pre></div>
 </div>
 </div>
@@ -1779,7 +1800,7 @@ Name: Score, dtype: float64
 </section>
 <section id="id14">
 <h3>Check-in<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h3>
-<p>Could we calculate the <code class="docutils literal notranslate"><span class="pre">mean</span></code> of the <code class="docutils literal notranslate"><span class="pre">ocean_proximity</span></code> variable? Why or why not?</p>
+<p>Could we calculate the <code class="docutils literal notranslate"><span class="pre">mean</span></code> of the <code class="docutils literal notranslate"><span class="pre">Type</span> <span class="pre">1</span></code> variable? Why or why not?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### Your code here</span>
@@ -1790,20 +1811,33 @@ Name: Score, dtype: float64
 </section>
 <section id="id15">
 <h3>Solution<a class="headerlink" href="#id15" title="Permalink to this headline">#</a></h3>
-<p>No, because <code class="docutils literal notranslate"><span class="pre">ocean_proximity</span></code> is a <strong>qualitative</strong> variable. We can only count how many of each <em>category</em> there are.</p>
+<p>No, because <code class="docutils literal notranslate"><span class="pre">Type</span> <span class="pre">1</span></code> is a <strong>qualitative</strong> variable. We can only count how many of each <em>category</em> there are.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_housing</span><span class="p">[</span><span class="s1">&#39;ocean_proximity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_pokemon</span><span class="p">[</span><span class="s1">&#39;Type 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;1H OCEAN     9136
-INLAND        6551
-NEAR OCEAN    2658
-NEAR BAY      2290
-ISLAND           5
-Name: ocean_proximity, dtype: int64
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Water       112
+Normal       98
+Grass        70
+Bug          69
+Psychic      57
+Fire         52
+Electric     44
+Rock         44
+Dragon       32
+Ground       32
+Ghost        32
+Dark         31
+Poison       28
+Steel        27
+Fighting     27
+Ice          24
+Fairy        17
+Flying        4
+Name: Type 1, dtype: int64
 </pre></div>
 </div>
 </div>
@@ -1939,7 +1973,7 @@ Name: ocean_proximity, dtype: int64
 </section>
 <section id="id16">
 <h3>Check-in<a class="headerlink" href="#id16" title="Permalink to this headline">#</a></h3>
-<p>Create a new column of <code class="docutils literal notranslate"><span class="pre">df_housing</span></code> that calculates the <strong>ratio</strong> between the <code class="docutils literal notranslate"><span class="pre">population</span></code> of a block and the number of <code class="docutils literal notranslate"><span class="pre">households</span></code> on that block.</p>
+<p>Create a new column of <code class="docutils literal notranslate"><span class="pre">df_pokemon</span></code> that calculates the <strong>ratio</strong> between the <code class="docutils literal notranslate"><span class="pre">Attack</span></code> of a Pokeon and its <code class="docutils literal notranslate"><span class="pre">Defense</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### Your code here</span>
@@ -1952,8 +1986,8 @@ Name: ocean_proximity, dtype: int64
 <h3>Solution<a class="headerlink" href="#id17" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_housing</span><span class="p">[</span><span class="s1">&#39;pop_per_household&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_housing</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df_housing</span><span class="p">[</span><span class="s1">&#39;households&#39;</span><span class="p">]</span>
-<span class="n">df_housing</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_pokemon</span><span class="p">[</span><span class="s1">&#39;attack_defense_ratio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_pokemon</span><span class="p">[</span><span class="s1">&#39;Attack&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df_pokemon</span><span class="p">[</span><span class="s1">&#39;Defense&#39;</span><span class="p">]</span>
+<span class="n">df_pokemon</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1976,47 +2010,56 @@ Name: ocean_proximity, dtype: int64
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>longitude</th>
-      <th>latitude</th>
-      <th>housing_median_age</th>
-      <th>total_rooms</th>
-      <th>total_bedrooms</th>
-      <th>population</th>
-      <th>households</th>
-      <th>median_income</th>
-      <th>median_house_value</th>
-      <th>ocean_proximity</th>
-      <th>pop_per_household</th>
+      <th>#</th>
+      <th>Name</th>
+      <th>Type 1</th>
+      <th>Type 2</th>
+      <th>Total</th>
+      <th>HP</th>
+      <th>Attack</th>
+      <th>Defense</th>
+      <th>Sp. Atk</th>
+      <th>Sp. Def</th>
+      <th>Speed</th>
+      <th>Generation</th>
+      <th>Legendary</th>
+      <th>attack_defense_ratio</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>-122.23</td>
-      <td>37.88</td>
-      <td>41.0</td>
-      <td>880.0</td>
-      <td>129.0</td>
-      <td>322.0</td>
-      <td>126.0</td>
-      <td>8.3252</td>
-      <td>452600.0</td>
-      <td>NEAR BAY</td>
-      <td>2.555556</td>
+      <td>1</td>
+      <td>Bulbasaur</td>
+      <td>Grass</td>
+      <td>Poison</td>
+      <td>318</td>
+      <td>45</td>
+      <td>49</td>
+      <td>49</td>
+      <td>65</td>
+      <td>65</td>
+      <td>45</td>
+      <td>1</td>
+      <td>False</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>-122.22</td>
-      <td>37.86</td>
-      <td>21.0</td>
-      <td>7099.0</td>
-      <td>1106.0</td>
-      <td>2401.0</td>
-      <td>1138.0</td>
-      <td>8.3014</td>
-      <td>358500.0</td>
-      <td>NEAR BAY</td>
-      <td>2.109842</td>
+      <td>2</td>
+      <td>Ivysaur</td>
+      <td>Grass</td>
+      <td>Poison</td>
+      <td>405</td>
+      <td>60</td>
+      <td>62</td>
+      <td>63</td>
+      <td>80</td>
+      <td>80</td>
+      <td>60</td>
+      <td>1</td>
+      <td>False</td>
+      <td>0.984127</td>
     </tr>
   </tbody>
 </table>

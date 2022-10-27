@@ -468,6 +468,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#announcements">
    Announcements
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example">
+     Example
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#review-strings">
@@ -696,6 +703,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#announcements">
    Announcements
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example">
+     Example
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#review-strings">
@@ -916,19 +930,35 @@ title="Print to PDF"
 <section id="announcements">
 <h2>Announcements<a class="headerlink" href="#announcements" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>Grade posting:</p>
-<ul>
-<li><p>Lab 2 grades posted.</p></li>
-<li><p>PS 1 grades will be posted tomorrow at the latest.</p></li>
+<li><p>Announcement on how to write your answers for labs/problem sets.</p></li>
 </ul>
-</li>
-<li><p>New assignments:</p>
-<ul>
-<li><p>Lab 4 released today.</p></li>
-<li><p>PS 2 released today.</p></li>
-</ul>
-</li>
-</ul>
+<section id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">#</a></h3>
+<p>Suppose a problem asks you to calculate the <code class="docutils literal notranslate"><span class="pre">len</span></code> of <code class="docutils literal notranslate"><span class="pre">list_example</span></code> and store it in a variable called <code class="docutils literal notranslate"><span class="pre">length</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list_example</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### This is the wrong way to write your answer</span>
+<span class="n">length</span> <span class="o">=</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### This is the right way to write your answer</span>
+<span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">list_example</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 <section id="review-strings">
 <h2>Review: strings<a class="headerlink" href="#review-strings" title="Permalink to this headline">#</a></h2>
@@ -1306,7 +1336,7 @@ title="Print to PDF"
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">Input In [22],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="nn">Input In [25],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="mi">2</span> <span class="o">+</span> <span class="s2">&quot; cats&quot;</span>
 
 <span class="ne">TypeError</span>: unsupported operand type(s) for +: &#39;int&#39; and &#39;str&#39;
