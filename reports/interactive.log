@@ -17,14 +17,13 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-num_vowels
+exponentiate(2, b = 4, 3)
 ------------------
 
-[0;31m---------------------------------------------------------------------------[0m
-[0;31mNameError[0m                                 Traceback (most recent call last)
-Input [0;32mIn [2][0m, in [0;36m<cell line: 1>[0;34m()[0m
-[0;32m----> 1[0m [43mnum_vowels[49m
+[0;36m  Input [0;32mIn [2][0;36m[0m
+[0;31m    exponentiate(2, b = 4, 3)[0m
+[0m                            ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m positional argument follows keyword argument
 
-[0;31mNameError[0m: name 'num_vowels' is not defined
-NameError: name 'num_vowels' is not defined
+SyntaxError: positional argument follows keyword argument (1491491819.py, line 1)
 

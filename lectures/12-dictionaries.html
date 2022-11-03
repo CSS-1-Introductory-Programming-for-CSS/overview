@@ -253,7 +253,17 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="22-pandas.html">
-   21-Pandas
+   22-Pandas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23-pandas-operations.html">
+   23-Pandas (Basic Operations)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="24-pandas-advanced.html">
+   24-Pandas (Advanced Operations)
   </a>
  </li>
 </ul>
@@ -689,6 +699,55 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nested-dictionaries">
+   Nested dictionaries
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-in-conceptual">
+     Check-in (conceptual)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-possible-implementation">
+     A possible implementation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#indexing-our-nested-dict">
+     Indexing our nested
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       dict
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Check-in
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nested-indices">
+       Nested indices
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Check-in
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solution">
+     Solution
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#conclusion">
    Conclusion
   </a>
@@ -939,6 +998,55 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nested-dictionaries">
+   Nested dictionaries
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-in-conceptual">
+     Check-in (conceptual)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-possible-implementation">
+     A possible implementation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#indexing-our-nested-dict">
+     Indexing our nested
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       dict
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Check-in
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nested-indices">
+       Nested indices
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Check-in
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solution">
+     Solution
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#conclusion">
    Conclusion
   </a>
@@ -958,8 +1066,15 @@ title="Print to PDF"
 <section id="announcements">
 <h2>Announcements<a class="headerlink" href="#announcements" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>Problem set 2 due today!</p></li>
-<li><p>To start: interactive practice</p></li>
+<li><p>Mid-quarter survey.</p></li>
+<li><p><strong>Advice on working through problems</strong>:</p>
+<ul>
+<li><p>Think about whether we’ve solved a similar problem in class before––lots of programming problems are <em>analogous</em> (kind of like math).</p></li>
+<li><p>Also helpful to look up your question on Google/Stackoverflow: “Python make string uppercase”</p></li>
+<li><p>w3schools is a great resource.</p></li>
+<li><p>Much of programming is figuring out how to get help from other resources!</p></li>
+</ul>
+</li>
 </ul>
 </section>
 <section id="goals-of-this-lecture">
@@ -1673,6 +1788,143 @@ Advanced Analytic Programming
 <span class="ne">----&gt; </span><span class="mi">3</span>     <span class="nb">print</span><span class="p">(</span><span class="n">fruits_dict</span><span class="p">[</span><span class="n">fruit</span><span class="p">])</span>
 
 <span class="ne">KeyError</span>: 2
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="nested-dictionaries">
+<h2>Nested dictionaries<a class="headerlink" href="#nested-dictionaries" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><p>A <strong>nested dictionary</strong> is a dictionary contained inside another dictionary, i.e., as a <strong>value</strong>.</p>
+</div></blockquote>
+<p>In principle, there is no limit on how many nested dictionaries can be contained in a <code class="docutils literal notranslate"><span class="pre">dict</span></code> (besides memory capacity on one’s computer).</p>
+<ul class="simple">
+<li><p>A nested dictionary is useful when you want to store <strong>complex information</strong> in each entry.</p></li>
+<li><p>So far, we’ve dealt mostly with very simple key/value entries.</p></li>
+<li><p>But what if we wanted to represent more complicated information?</p></li>
+</ul>
+<p>Example, for each instructor in CSS (or COGS, etc.), store:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">username</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Name</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Courses</span></code> (a <code class="docutils literal notranslate"><span class="pre">list</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Department</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Title</span></code>.</p></li>
+</ul>
+<section id="check-in-conceptual">
+<h3>Check-in (conceptual)<a class="headerlink" href="#check-in-conceptual" title="Permalink to this headline">#</a></h3>
+<p>What would be a useful <code class="docutils literal notranslate"><span class="pre">dict</span></code> structure to represent information about instructors? For example, say we wanted to represent:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">username</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">sttrott</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Name</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">Sean</span> <span class="pre">Trott</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Courses</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">['COGS</span> <span class="pre">14A',</span> <span class="pre">...]</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Department</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">COGS</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Title</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">Assistant</span> <span class="pre">Teaching</span> <span class="pre">Professor</span></code>)</p></li>
+</ul>
+</section>
+<section id="a-possible-implementation">
+<h3>A possible implementation<a class="headerlink" href="#a-possible-implementation" title="Permalink to this headline">#</a></h3>
+<p>One approach is to use <strong>nested dictionaries</strong>.</p>
+<ul class="simple">
+<li><p>At the top level, each instructor is represented by their <code class="docutils literal notranslate"><span class="pre">username</span></code>.</p></li>
+<li><p>Each PID then maps onto a nested dictionary, which contains their <code class="docutils literal notranslate"><span class="pre">Name</span></code>, <code class="docutils literal notranslate"><span class="pre">Email</span></code>, and any other info we need.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">instructors</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;sttrott&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="s1">&#39;Sean Trott&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Courses&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;COGS 14A&#39;</span><span class="p">,</span> <span class="s1">&#39;CSS 1&#39;</span><span class="p">,</span> <span class="s1">&#39;CSS 2&#39;</span><span class="p">],</span>
+               <span class="s1">&#39;Title&#39;</span><span class="p">:</span> <span class="s1">&#39;Assistant Teaching Professor&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;Department&#39;</span><span class="p">:</span> <span class="s1">&#39;COGS&#39;</span><span class="p">},</span>
+    <span class="s1">&#39;sellis&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="s1">&#39;Shannon Ellis&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Courses&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;COGS 18&#39;</span><span class="p">,</span> <span class="s1">&#39;COGS 108&#39;</span><span class="p">,</span> <span class="s1">&#39;COGS 137&#39;</span><span class="p">],</span>
+               <span class="s1">&#39;Title&#39;</span><span class="p">:</span> <span class="s1">&#39;Associate Teaching Professor&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;Department&#39;</span><span class="p">:</span> <span class="s1">&#39;COGS&#39;</span><span class="p">},</span>
+    <span class="s1">&#39;wstyler&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="s1">&#39;Will Styler&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Courses&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;LING 6&#39;</span><span class="p">,</span> <span class="s1">&#39;LING 101&#39;</span><span class="p">],</span>
+               <span class="s1">&#39;Title&#39;</span><span class="p">:</span> <span class="s1">&#39;Director of CSS&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;Department&#39;</span><span class="p">:</span> <span class="s1">&#39;LING&#39;</span><span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="indexing-our-nested-dict">
+<h3>Indexing our nested <code class="docutils literal notranslate"><span class="pre">dict</span></code><a class="headerlink" href="#indexing-our-nested-dict" title="Permalink to this headline">#</a></h3>
+<p>We can index into this <code class="docutils literal notranslate"><span class="pre">dict</span></code> as we would normally. Note that now, the <strong>value</strong> is itself a <code class="docutils literal notranslate"><span class="pre">dict</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">instructors</span><span class="p">[</span><span class="s1">&#39;sellis&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Name&#39;: &#39;Shannon Ellis&#39;,
+ &#39;Courses&#39;: [&#39;COGS 18&#39;, &#39;COGS 108&#39;, &#39;COGS 137&#39;],
+ &#39;Title&#39;: &#39;Associate Teaching Professor&#39;,
+ &#39;Department&#39;: &#39;COGS&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<section id="id7">
+<h4>Check-in<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h4>
+<p>How might we index the <code class="docutils literal notranslate"><span class="pre">Title</span></code> of a particular instructor? I.e., what if we wanted to find out the <code class="docutils literal notranslate"><span class="pre">Title</span></code> of <code class="docutils literal notranslate"><span class="pre">sttrott</span></code>?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### Your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="nested-indices">
+<h4>Nested indices<a class="headerlink" href="#nested-indices" title="Permalink to this headline">#</a></h4>
+<p>Indexing into a <strong>nested dictionary</strong> follows the same logic––we can <em>chain together</em> index statements to retrieve a particular value.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">instructors</span><span class="p">[</span><span class="s1">&#39;sttrott&#39;</span><span class="p">][</span><span class="s1">&#39;Title&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Assistant Teaching Professor&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">instructors</span><span class="p">[</span><span class="s1">&#39;sttrott&#39;</span><span class="p">][</span><span class="s1">&#39;Department&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;COGS&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="id8">
+<h3>Check-in<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
+<p>How would you retrieve the list of <code class="docutils literal notranslate"><span class="pre">username</span></code>s (i.e., keys) in this <code class="docutils literal notranslate"><span class="pre">dict</span></code>?</p>
+</section>
+<section id="solution">
+<h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">usernames</span> <span class="o">=</span> <span class="n">instructors</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">usernames</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;sttrott&#39;, &#39;sellis&#39;, &#39;wstyler&#39;])
 </pre></div>
 </div>
 </div>

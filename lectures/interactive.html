@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Interactive practice: Similar problems to PS &#8212; CSS 1</title>
+    <title>&lt;no title&gt; &#8212; CSS 1</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -251,7 +251,17 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="22-pandas.html">
-   21-Pandas
+   22-Pandas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23-pandas-operations.html">
+   23-Pandas (Basic Operations)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="24-pandas-advanced.html">
+   24-Pandas (Advanced Operations)
   </a>
  </li>
 </ul>
@@ -459,17 +469,7 @@ title="Print to PDF"
         <i class="fas fa-list"></i> Contents
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Interactive practice: Similar problems to PS
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dictionaries">
-   Dictionaries
-  </a>
- </li>
+        <ul class="simple visible nav section-nav flex-column">
 </ul>
 
     </nav>
@@ -479,7 +479,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Interactive practice: Similar problems to PS</h1>
+                <h1><no title></h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -488,17 +488,7 @@ title="Print to PDF"
                             <h2> Contents </h2>
                         </div>
                         <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Interactive practice: Similar problems to PS
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dictionaries">
-   Dictionaries
-  </a>
- </li>
+                            <ul class="simple visible nav section-nav flex-column">
 </ul>
 
                         </nav>
@@ -509,93 +499,74 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="interactive-practice-similar-problems-to-ps">
-<h1>Interactive practice: Similar problems to PS<a class="headerlink" href="#interactive-practice-similar-problems-to-ps" title="Permalink to this headline">#</a></h1>
-<div class="cell docutils container">
+  <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Goal: Append items from one list to another, changing case, then sort</span>
-<span class="n">course_topics</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;cognition&#39;</span><span class="p">,</span> <span class="s1">&#39;brain&#39;</span><span class="p">,</span> <span class="s1">&#39;behavior&#39;</span><span class="p">,</span> 
-                 <span class="s1">&#39;computation&#39;</span><span class="p">,</span> <span class="s1">&#39;anatomy&#39;</span><span class="p">]</span>
-<span class="n">new_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">course_topics</span><span class="p">:</span>
-    <span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">topic</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">new_list</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">new_list</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">date_object</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="n">day</span> <span class="o">=</span> <span class="mi">18</span><span class="p">,</span>
+                  <span class="n">month</span> <span class="o">=</span> <span class="mi">9</span><span class="p">,</span>
+                  <span class="n">year</span> <span class="o">=</span> <span class="mi">2022</span><span class="p">)</span>
+<span class="n">date_object</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;ANATOMY&#39;, &#39;BEHAVIOR&#39;, &#39;BRAIN&#39;, &#39;COGNITION&#39;, &#39;COMPUTATION&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.date(2022, 9, 18)
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">new_new_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">new_list</span><span class="p">]</span>
-<span class="n">new_new_list</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">date_object</span><span class="o">.</span><span class="n">ctime</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;anatomy&#39;, &#39;behavior&#39;, &#39;brain&#39;, &#39;cognition&#39;, &#39;computation&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Sun Sep 18 00:00:00 2022&#39;
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Goal: Identify words in passage, then count how many words end with &quot;w&quot;</span>
-<span class="n">passage</span> <span class="o">=</span> <span class="s2">&quot;Tomorrow, and TOMORROW, and tomorrow, Creeps in this petty pace from day to day&quot;</span>
-<span class="c1"># ...</span>
-<span class="n">words</span> <span class="o">=</span> <span class="n">passage</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
-<span class="n">num_end_w</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;w&quot;</span> <span class="ow">or</span> <span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;W&quot;</span><span class="p">:</span>
-        <span class="n">num_end_w</span> <span class="o">+=</span> <span class="mi">1</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="dictionaries">
-<h1>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this headline">#</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">courses</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;CSS 1&#39;</span><span class="p">:</span> <span class="s1">&#39;Introduction to Programming&#39;</span><span class="p">,</span>
-          <span class="s1">&#39;CSS 2&#39;</span><span class="p">:</span> <span class="s1">&#39;Data and Model Programming&#39;</span><span class="p">,</span>
-          <span class="s1">&#39;CSS 100&#39;</span><span class="p">:</span> <span class="s1">&#39;Advanced Analytic Programming&#39;</span><span class="p">}</span>
-<span class="c1"># courses.keys()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">date2</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="n">day</span> <span class="o">=</span> <span class="mi">17</span><span class="p">,</span> <span class="n">month</span> <span class="o">=</span> <span class="mi">9</span><span class="p">,</span>
+            <span class="n">year</span> <span class="o">=</span> <span class="mi">2022</span><span class="p">)</span>
+<span class="c1">## How far apart are these dates?</span>
+<span class="c1"># </span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">course_id</span><span class="p">,</span> <span class="n">course_name</span> <span class="ow">in</span> <span class="n">courses</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">course_id</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">course_name</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">date2</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CSS 1
-Introduction to Programming
-CSS 2
-Data and Model Programming
-CSS 100
-Advanced Analytic Programming
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.date(2022, 9, 17)
 </pre></div>
 </div>
 </div>
 </div>
-</section>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">date_object</span> <span class="o">-</span> <span class="n">date2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.timedelta(days=1)
+</pre></div>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
