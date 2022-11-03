@@ -40,11 +40,11 @@ Note that this schedule is **aspirational** and is therefore **subject to change
 | W-11-16-2022 | Numpy | | |
 | F-11-18-2022 | Pandas: Data Structures | | |
 | **Week 9** | | | | 
-| M-11-21-2022 | Pandas: Basic Operations | Lab 8 due | |
+| M-11-21-2022 | Pandas: Basic Operations | Lab 8 due | **Final Project Released **|
 | W-11-23-2022 | Pandas: Advanced Operationas | **PS 4 due** | |
 | F-11-25-2022 | **Holiday (Thanksgiving)** |  | |
 | **Week 10** | | | |
-| M-11-28-2022 | Plotting: Matplotlib | Lab 9 due | |
+| M-11-28-2022 | Plotting: Seaborn | Lab 9 due | |
 | W-11-30-2022 | Plotting: Seaborn| | | 
 | F-12-02-2022 | Other Useful Packages and Tools |  | |
 | **Finals Week** | | | |
