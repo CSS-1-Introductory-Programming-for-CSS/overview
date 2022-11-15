@@ -33,20 +33,20 @@ Note that this schedule is **aspirational** and is therefore **subject to change
 | F-11-04-2022 | Reading Data (Text) |  | |
 | **Week 7** | | | | |
 | M-11-07-2022 | Reading Data (Text)| Lab 6 due| |
-| W-11-09-2022 | Reading Data (JSON) | **PS 3 due** | |
+| W-11-09-2022 | Reading Data (Text)| | **PS 3 due** | |
 | F-11-11-2022 | **Holiday (Veteran's Day)**|  | |
 | **Week 8** | | | |
-| M-11-14-2022 | Numpy | Lab 7 due| PS 4 released |
+| M-11-14-2022 | Reading Data (JSON) | Lab 7 due| PS 4 released |
 | W-11-16-2022 | Numpy | | |
-| F-11-18-2022 | Pandas: Data Structures | | |
+| F-11-18-2022 | Numpy | | |
 | **Week 9** | | | | 
-| M-11-21-2022 | Pandas: Basic Operations | Lab 8 due | **Final Project Released **|
-| W-11-23-2022 | Pandas: Advanced Operationas | **PS 4 due** | |
+| M-11-21-2022 | Pandas: Data Structures |  | **Final Project Released** |
+| W-11-23-2022 | Pandas: Basic Operations | | |
 | F-11-25-2022 | **Holiday (Thanksgiving)** |  | |
 | **Week 10** | | | |
-| M-11-28-2022 | Plotting: Seaborn | Lab 9 due | |
-| W-11-30-2022 | Plotting: Seaborn| | | 
+| M-11-28-2022 | Pandas: Advanced Operations | Lab 8 due | |
+| W-11-30-2022 | Plotting: Seaborn | **PS 4 due**  | | 
 | F-12-02-2022 | Other Useful Packages and Tools |  | |
 | **Finals Week** | | | |
-| M-12-05-2022 | | Lab 10 due | |
+| M-12-05-2022 | |  | |
 | W-12-07-2022 | | **Final Project due** | |
