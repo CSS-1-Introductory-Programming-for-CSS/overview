@@ -1,0 +1,1505 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Other useful Python packages &#8212; CSS 1</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Advanced operations with pandas" href="24-pandas-advanced.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo_UCSD.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">CSS 1</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to CSS 1!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Course Logistics
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../course/syllabus.html">
+   CSS 1 Syllabus: Fall 2022
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../course/schedule.html">
+   CSS 1 Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../course/expectations.html">
+   Course Expectations (and FAQ)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../course/datahub.html">
+   Using DataHub
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01-intro.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02-tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03-basics-variables.html">
+   03-Basics (Variables)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-basics-syntax.html">
+   04-Basics (Syntax)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05-conditionals.html">
+   05-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-loops.html">
+   06-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07-loops-while.html">
+   07-Loops (While)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08-strings.html">
+   08-Strings (Basics)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09-strings-advanced.html">
+   09-Strings (Advanced)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-lists.html">
+   10-Lists (Basics)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-lists-advanced.html">
+   11-Lists (Advanced)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-dictionaries.html">
+   12-Dictionaries (Basics)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13-dictionaries-advanced.html">
+   13-Dictionaries (Advanced)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="14-functions.html">
+   14-Functions (Basics)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15-functions-advanced.html">
+   15-Functions (Advanced)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16-classes.html">
+   16-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="17-reading-text.html">
+   17-Reading Text Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18-reading-advanced.html">
+   18-Working with Text Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="19-reading-json.html">
+   19-Reading JSON Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20-numpy.html">
+   20-Numpy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21-numpy-advanced.html">
+   21-Numpy (Advanced)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22-pandas.html">
+   22-Pandas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23-pandas-operations.html">
+   23-Pandas (Basic Operations)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="24-pandas-advanced.html">
+   24-Pandas (Advanced Operations)
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   25-Course Review and Other Useful Packages
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/lectures/25-final-lecture.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flectures/25-final-lecture.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/lectures/25-final-lecture.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#announcements">
+   Announcements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals-of-this-lecture">
+   Goals of this lecture
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-we-ve-learned">
+   What we’ve learned
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-visualization-with-seaborn">
+   Data visualization with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     seaborn
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-data-visualization">
+     What is data visualization?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-dataset">
+     Example dataset
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#histograms">
+     Histograms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scatterplots">
+     Scatterplots
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#boxplots">
+     Boxplots
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#barplots">
+     Barplots
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#statistics-with-scipy">
+   Statistics with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     scipy
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calculating-correlations">
+     Calculating
+     <em>
+      correlations
+     </em>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#comparing-to-visualization">
+       Comparing to visualization
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-a-t-test">
+     Running a
+     <em>
+      t-test
+     </em>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#t-test-in-scipy">
+       t-test in
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         scipy
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nlp-with-nltk">
+   NLP with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     nltk
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#word-tokenizing">
+     Word tokenizing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sentence-tokenizing">
+     Sentence tokenizing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-of-speech-taggging">
+     Part-of-speech taggging
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#pos-tag-with-nltk">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         pos_tag
+        </span>
+       </code>
+       with
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         nltk
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#handling-words-with-multiple-pos">
+       Handling words with multiple POS
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sentiment-analysis">
+     Sentiment analysis
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sentimentintensityanalyzer">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         SentimentIntensityAnalyzer
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#accounting-for-negation-and-punctuation">
+       Accounting for negation and punctuation
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#there-s-always-a-but">
+       There’s always a “but”
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Other useful Python packages</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#announcements">
+   Announcements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals-of-this-lecture">
+   Goals of this lecture
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-we-ve-learned">
+   What we’ve learned
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-visualization-with-seaborn">
+   Data visualization with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     seaborn
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-data-visualization">
+     What is data visualization?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-dataset">
+     Example dataset
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#histograms">
+     Histograms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scatterplots">
+     Scatterplots
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#boxplots">
+     Boxplots
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#barplots">
+     Barplots
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#statistics-with-scipy">
+   Statistics with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     scipy
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calculating-correlations">
+     Calculating
+     <em>
+      correlations
+     </em>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#comparing-to-visualization">
+       Comparing to visualization
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-a-t-test">
+     Running a
+     <em>
+      t-test
+     </em>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#t-test-in-scipy">
+       t-test in
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         scipy
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nlp-with-nltk">
+   NLP with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     nltk
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#word-tokenizing">
+     Word tokenizing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sentence-tokenizing">
+     Sentence tokenizing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-of-speech-taggging">
+     Part-of-speech taggging
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#pos-tag-with-nltk">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         pos_tag
+        </span>
+       </code>
+       with
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         nltk
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#handling-words-with-multiple-pos">
+       Handling words with multiple POS
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sentiment-analysis">
+     Sentiment analysis
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sentimentintensityanalyzer">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         SentimentIntensityAnalyzer
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#accounting-for-negation-and-punctuation">
+       Accounting for negation and punctuation
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#there-s-always-a-but">
+       There’s always a “but”
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="other-useful-python-packages">
+<h1>Other useful Python packages<a class="headerlink" href="#other-useful-python-packages" title="Permalink to this headline">#</a></h1>
+<section id="announcements">
+<h2>Announcements<a class="headerlink" href="#announcements" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>CAPES and survey available!</p>
+<ul>
+<li><p>Survey: <a class="reference external" href="https://forms.gle/xox1KgV6FwCYoESX6">https://forms.gle/xox1KgV6FwCYoESX6</a></p></li>
+<li><p>CAPES: <a class="reference external" href="https://cape.ucsd.edu/student/instructions.html">https://cape.ucsd.edu/student/instructions.html</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="goals-of-this-lecture">
+<h2>Goals of this lecture<a class="headerlink" href="#goals-of-this-lecture" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Review of course: what we’ve learned this quarter.</p></li>
+<li><p>Overview of other useful Python <strong>packages</strong>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">seaborn</span></code>: easily and quickly make <strong>data visualizations</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">scipy</span></code>: tools for <strong>statistical analyses</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nltk</span></code>: tools for <strong>Natural Language Processing</strong>, like <em>sentiment analysis</em>.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="what-we-ve-learned">
+<h2>What we’ve learned<a class="headerlink" href="#what-we-ve-learned" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Reflect on the very first day of class: most of you had never programmed before!</p></li>
+<li><p>Now you know:</p>
+<ul>
+<li><p>How to use <strong>Jupyter notebooks</strong>.</p></li>
+<li><p>How to write <code class="docutils literal notranslate"><span class="pre">if</span></code> statements and <code class="docutils literal notranslate"><span class="pre">for</span></code> loops.</p></li>
+<li><p>How to create <strong>custom functions</strong>.</p></li>
+<li><p>How to <strong>read in files</strong> of various types.</p></li>
+<li><p>How to work with <strong>tabular data</strong> using <code class="docutils literal notranslate"><span class="pre">pandas</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+<p>That’s a lot for ten weeks!</p>
+</section>
+<section id="data-visualization-with-seaborn">
+<h2>Data visualization with <code class="docutils literal notranslate"><span class="pre">seaborn</span></code><a class="headerlink" href="#data-visualization-with-seaborn" title="Permalink to this headline">#</a></h2>
+<section id="what-is-data-visualization">
+<h3>What is data visualization?<a class="headerlink" href="#what-is-data-visualization" title="Permalink to this headline">#</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Data_visualization">Data visualization</a> refers to the process (and result) of representing data graphically.</p>
+<ul class="simple">
+<li><p><strong>CSS 2</strong> will dedicate much more time to this.</p></li>
+<li><p>Today: introduction to <code class="docutils literal notranslate"><span class="pre">seaborn</span></code>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># conventionalized abbreviation</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline 
+<span class="o">%</span><span class="k">config</span> InlineBackend.figure_format = &#39;retina&#39;
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/anaconda3/lib/python3.9/site-packages/scipy/__init__.py:146: UserWarning: A NumPy version &gt;=1.16.5 and &lt;1.23.0 is required for this version of SciPy (detected version 1.23.1
+  warnings.warn(f&quot;A NumPy version &gt;={np_minversion} and &lt;{np_maxversion}&quot;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="example-dataset">
+<h3>Example dataset<a class="headerlink" href="#example-dataset" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Load taxis dataset</span>
+<span class="n">df_taxis</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;taxis&quot;</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">df_taxis</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6433
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_taxis</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>pickup</th>
+      <th>dropoff</th>
+      <th>passengers</th>
+      <th>distance</th>
+      <th>fare</th>
+      <th>tip</th>
+      <th>tolls</th>
+      <th>total</th>
+      <th>color</th>
+      <th>payment</th>
+      <th>pickup_zone</th>
+      <th>dropoff_zone</th>
+      <th>pickup_borough</th>
+      <th>dropoff_borough</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2019-03-23 20:21:09</td>
+      <td>2019-03-23 20:27:24</td>
+      <td>1</td>
+      <td>1.60</td>
+      <td>7.0</td>
+      <td>2.15</td>
+      <td>0.0</td>
+      <td>12.95</td>
+      <td>yellow</td>
+      <td>credit card</td>
+      <td>Lenox Hill West</td>
+      <td>UN/Turtle Bay South</td>
+      <td>Manhattan</td>
+      <td>Manhattan</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2019-03-04 16:11:55</td>
+      <td>2019-03-04 16:19:00</td>
+      <td>1</td>
+      <td>0.79</td>
+      <td>5.0</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>9.30</td>
+      <td>yellow</td>
+      <td>cash</td>
+      <td>Upper West Side South</td>
+      <td>Upper West Side South</td>
+      <td>Manhattan</td>
+      <td>Manhattan</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="histograms">
+<h3>Histograms<a class="headerlink" href="#histograms" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><strong>Histograms</strong> are critical for visualizing how your data distribute.</p></li>
+<li><p>Used for <strong>continuous</strong> variables.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">df_taxis</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;distance&quot;</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">.5</span><span class="p">,</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;distance&#39;, ylabel=&#39;Count&#39;&gt;
+</pre></div>
+</div>
+<img alt="../_images/25-final-lecture_11_1.png" src="../_images/25-final-lecture_11_1.png" />
+</div>
+</div>
+</section>
+<section id="scatterplots">
+<h3>Scatterplots<a class="headerlink" href="#scatterplots" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><strong>Scatterplots</strong> are useful for visualizing how two <em>continuous variables</em> relate.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">df_taxis</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;distance&quot;</span><span class="p">,</span> 
+                <span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;fare&quot;</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;distance&#39;, ylabel=&#39;fare&#39;&gt;
+</pre></div>
+</div>
+<img alt="../_images/25-final-lecture_13_1.png" src="../_images/25-final-lecture_13_1.png" />
+</div>
+</div>
+</section>
+<section id="boxplots">
+<h3>Boxplots<a class="headerlink" href="#boxplots" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><strong>Boxplots</strong> are useful for visualizing one <em>continuous variable</em> as it relates to a <em>categorical variable</em>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">df_taxis</span><span class="p">,</span> 
+            <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;payment&quot;</span><span class="p">,</span> 
+            <span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;fare&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;payment&#39;, ylabel=&#39;fare&#39;&gt;
+</pre></div>
+</div>
+<img alt="../_images/25-final-lecture_15_1.png" src="../_images/25-final-lecture_15_1.png" />
+</div>
+</div>
+</section>
+<section id="barplots">
+<h3>Barplots<a class="headerlink" href="#barplots" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><strong>Barplots</strong> are also useful for visualizing one <em>continuous variable</em> as it relates to a <em>categorical variable</em>.</p></li>
+<li><p>Typically less <em>informative</em> than a boxplot or violinplot.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">df_taxis</span><span class="p">,</span> 
+            <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;payment&quot;</span><span class="p">,</span> 
+            <span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;fare&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;payment&#39;, ylabel=&#39;fare&#39;&gt;
+</pre></div>
+</div>
+<img alt="../_images/25-final-lecture_17_1.png" src="../_images/25-final-lecture_17_1.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="statistics-with-scipy">
+<h2>Statistics with <code class="docutils literal notranslate"><span class="pre">scipy</span></code><a class="headerlink" href="#statistics-with-scipy" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="https://docs.scipy.org/doc/scipy/tutorial/stats.html"><code class="docutils literal notranslate"><span class="pre">scipy</span></code></a> is a Python package with <em>many uses</em>, including statistics.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">ss</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="calculating-correlations">
+<h3>Calculating <em>correlations</em><a class="headerlink" href="#calculating-correlations" title="Permalink to this headline">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">scipy.stats</span></code> can be used to calculate a <strong>correlation coefficient</strong>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Gives correlation between distance and fare</span>
+<span class="n">ss</span><span class="o">.</span><span class="n">pearsonr</span><span class="p">(</span><span class="n">df_taxis</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">],</span>
+           <span class="n">df_taxis</span><span class="p">[</span><span class="s1">&#39;fare&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(0.9201077027895823, 0.0)
+</pre></div>
+</div>
+</div>
+</div>
+<section id="comparing-to-visualization">
+<h4>Comparing to visualization<a class="headerlink" href="#comparing-to-visualization" title="Permalink to this headline">#</a></h4>
+<p>Consistent with <strong>correlation coefficient</strong>: strong, positive relationship between <code class="docutils literal notranslate"><span class="pre">fare</span></code> and <code class="docutils literal notranslate"><span class="pre">distance</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">df_taxis</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;distance&quot;</span><span class="p">,</span> 
+                <span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;fare&quot;</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;distance&#39;, ylabel=&#39;fare&#39;&gt;
+</pre></div>
+</div>
+<img alt="../_images/25-final-lecture_23_1.png" src="../_images/25-final-lecture_23_1.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="running-a-t-test">
+<h3>Running a <em>t-test</em><a class="headerlink" href="#running-a-t-test" title="Permalink to this headline">#</a></h3>
+<p>A <a class="reference external" href="https://en.wikipedia.org/wiki/Student%27s_t-test">t-test</a> compares two samples: how likely is it that these two samples came from the same “population”?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">df_taxis</span><span class="p">,</span> 
+            <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;payment&quot;</span><span class="p">,</span> 
+            <span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;fare&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;payment&#39;, ylabel=&#39;fare&#39;&gt;
+</pre></div>
+</div>
+<img alt="../_images/25-final-lecture_25_1.png" src="../_images/25-final-lecture_25_1.png" />
+</div>
+</div>
+<section id="t-test-in-scipy">
+<h4>t-test in <code class="docutils literal notranslate"><span class="pre">scipy</span></code><a class="headerlink" href="#t-test-in-scipy" title="Permalink to this headline">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## First, filter our data to get cash vs. credit</span>
+<span class="n">cash</span> <span class="o">=</span> <span class="n">df_taxis</span><span class="p">[</span><span class="n">df_taxis</span><span class="p">[</span><span class="s1">&#39;payment&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;cash&#39;</span><span class="p">]</span>
+<span class="n">credit</span> <span class="o">=</span> <span class="n">df_taxis</span><span class="p">[</span><span class="n">df_taxis</span><span class="p">[</span><span class="s1">&#39;payment&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;credit card&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Now, run t-test comparing fare for cash vs. credit</span>
+<span class="c1">## Very significant p-value</span>
+<span class="n">ss</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">credit</span><span class="p">[</span><span class="s1">&#39;fare&#39;</span><span class="p">],</span> <span class="n">cash</span><span class="p">[</span><span class="s1">&#39;fare&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ttest_indResult(statistic=6.584862944621184, pvalue=4.91557250875317e-11)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="nlp-with-nltk">
+<h2>NLP with <code class="docutils literal notranslate"><span class="pre">nltk</span></code><a class="headerlink" href="#nlp-with-nltk" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="https://www.nltk.org/"><code class="docutils literal notranslate"><span class="pre">nltk</span></code></a>, or <strong>Natural Language Toolkit</strong>, is an incredibly useful Python package for computational linguistics and NLP.</p>
+<ul class="simple">
+<li><p>Must be <em>installed</em>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="word-tokenizing">
+<h3>Word tokenizing<a class="headerlink" href="#word-tokenizing" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>So far, we’ve been trying to <strong>tokenize</strong> text using <code class="docutils literal notranslate"><span class="pre">split</span></code>.</p></li>
+<li><p>Sometimes this doesn’t work easily––we have to write complicated code.</p></li>
+<li><p>But <code class="docutils literal notranslate"><span class="pre">nltk</span></code> has written useful functions for <strong>tokenizing</strong> text for us.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="s2">&quot;This is a bunch of words&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;This&#39;, &#39;is&#39;, &#39;a&#39;, &#39;bunch&#39;, &#39;of&#39;, &#39;words&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="s2">&quot;Even with commas, it does well!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Even&#39;, &#39;with&#39;, &#39;commas&#39;, &#39;,&#39;, &#39;it&#39;, &#39;does&#39;, &#39;well&#39;, &#39;!&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="sentence-tokenizing">
+<h3>Sentence tokenizing<a class="headerlink" href="#sentence-tokenizing" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">nltk</span></code> can also be used to tokenize at the level of <strong>sentences</strong>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nltk</span><span class="o">.</span><span class="n">sent_tokenize</span><span class="p">(</span><span class="s2">&quot;This is one sentence. This is another sentence. Here&#39;s another!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;This is one sentence.&#39;, &#39;This is another sentence.&#39;, &quot;Here&#39;s another!&quot;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="part-of-speech-taggging">
+<h3>Part-of-speech taggging<a class="headerlink" href="#part-of-speech-taggging" title="Permalink to this headline">#</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Part-of-speech_tagging">Part-of-speech tagging</a> is an operation that involves identifying whether each word is a <strong>noun</strong>, <strong>verb</strong>, etc.</p>
+<ul class="simple">
+<li><p>Very hard to write code to do this ourselves.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nltk</span></code> does it for us!</p></li>
+</ul>
+<section id="pos-tag-with-nltk">
+<h4><code class="docutils literal notranslate"><span class="pre">pos_tag</span></code> with <code class="docutils literal notranslate"><span class="pre">nltk</span></code><a class="headerlink" href="#pos-tag-with-nltk" title="Permalink to this headline">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## First, tokenize a sentence into words</span>
+<span class="n">words</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="s2">&quot;I walked into the room.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Then, run pos tagger</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">pos_tag</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[(&#39;I&#39;, &#39;PRP&#39;),
+ (&#39;walked&#39;, &#39;VBD&#39;),
+ (&#39;into&#39;, &#39;IN&#39;),
+ (&#39;the&#39;, &#39;DT&#39;),
+ (&#39;room&#39;, &#39;NN&#39;),
+ (&#39;.&#39;, &#39;.&#39;)]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="handling-words-with-multiple-pos">
+<h4>Handling words with multiple POS<a class="headerlink" href="#handling-words-with-multiple-pos" title="Permalink to this headline">#</a></h4>
+<p>Some words can be either nouns or verbs––<code class="docutils literal notranslate"><span class="pre">nltk</span></code> guesses POS based on <strong>context</strong>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## &quot;walk&quot; as noun</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">pos_tag</span><span class="p">(</span><span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="s2">&quot;He went for a walk.&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[(&#39;He&#39;, &#39;PRP&#39;),
+ (&#39;went&#39;, &#39;VBD&#39;),
+ (&#39;for&#39;, &#39;IN&#39;),
+ (&#39;a&#39;, &#39;DT&#39;),
+ (&#39;walk&#39;, &#39;NN&#39;),
+ (&#39;.&#39;, &#39;.&#39;)]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## &quot;walk&quot; as verb</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">pos_tag</span><span class="p">(</span><span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="s2">&quot;He likes to walk.&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[(&#39;He&#39;, &#39;PRP&#39;), (&#39;likes&#39;, &#39;VBZ&#39;), (&#39;to&#39;, &#39;TO&#39;), (&#39;walk&#39;, &#39;VB&#39;), (&#39;.&#39;, &#39;.&#39;)]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="sentiment-analysis">
+<h3>Sentiment analysis<a class="headerlink" href="#sentiment-analysis" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>As we’ve seen, <strong>sentiment analysis</strong> involves estimating the <em>valence</em> of text.</p></li>
+<li><p>Our approach has been simple: count the <em>positive</em> and <em>negative</em> words.</p></li>
+<li><p>But sometimes a word means different things based on context (“The movie was <strong>not</strong> great”).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nltk</span></code> tries to account for this in its sentiment analysis tool.</p></li>
+</ul>
+<section id="sentimentintensityanalyzer">
+<h4><code class="docutils literal notranslate"><span class="pre">SentimentIntensityAnalyzer</span></code><a class="headerlink" href="#sentimentintensityanalyzer" title="Permalink to this headline">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.sentiment.vader</span> <span class="kn">import</span> <span class="n">SentimentIntensityAnalyzer</span>
+<span class="n">analyzer</span> <span class="o">=</span> <span class="n">SentimentIntensityAnalyzer</span><span class="p">()</span> <span class="c1">## This is a *class*</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">analyzer</span><span class="o">.</span><span class="n">polarity_scores</span><span class="p">(</span><span class="s2">&quot;That restaurant was great!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;neg&#39;: 0.0, &#39;neu&#39;: 0.406, &#39;pos&#39;: 0.594, &#39;compound&#39;: 0.6588}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="accounting-for-negation-and-punctuation">
+<h4>Accounting for negation and punctuation<a class="headerlink" href="#accounting-for-negation-and-punctuation" title="Permalink to this headline">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## &quot;not delicious&quot; ≠ &quot;delicious&quot;</span>
+<span class="n">analyzer</span><span class="o">.</span><span class="n">polarity_scores</span><span class="p">(</span><span class="s2">&quot;That restaurant was not great!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;neg&#39;: 0.473, &#39;neu&#39;: 0.527, &#39;pos&#39;: 0.0, &#39;compound&#39;: -0.5553}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Punctuation can &quot;intensify&quot; sentiment</span>
+<span class="n">analyzer</span><span class="o">.</span><span class="n">polarity_scores</span><span class="p">(</span><span class="s2">&quot;That restaurant was not great!!!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;neg&#39;: 0.51, &#39;neu&#39;: 0.49, &#39;pos&#39;: 0.0, &#39;compound&#39;: -0.6334}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="there-s-always-a-but">
+<h4>There’s always a “but”<a class="headerlink" href="#there-s-always-a-but" title="Permalink to this headline">#</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">nltk</span></code> weights the text <em>after</em> the “but” more than the text <em>before</em>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Punctuation can &quot;intensify&quot; sentiment</span>
+<span class="n">analyzer</span><span class="o">.</span><span class="n">polarity_scores</span><span class="p">(</span><span class="s2">&quot;I liked the food, but the ambience was horrible.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;neg&#39;: 0.375, &#39;neu&#39;: 0.474, &#39;pos&#39;: 0.15, &#39;compound&#39;: -0.5927}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>This class is intended to set the <strong>foundation</strong>.</p>
+<ul>
+<li><p>Now you are better set up to learn new tools in Python or other programming languages.</p></li>
+</ul>
+</li>
+<li><p>Many more useful tools in Python.</p></li>
+</ul>
+<p><strong>Thanks for a great quarter!</strong></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./lectures"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="24-pandas-advanced.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Advanced operations with <code class="docutils literal notranslate"><span class="pre">pandas</span></code></p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Sean Trott<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

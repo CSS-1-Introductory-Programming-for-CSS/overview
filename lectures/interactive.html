@@ -264,6 +264,11 @@ const thebe_selector_output = ".output, .cell_output"
    24-Pandas (Advanced Operations)
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="25-final-lecture.html">
+   25-Course Review and Other Useful Packages
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -515,269 +520,44 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_pokemon</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;Legendary&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_pokemon_subset</span> <span class="o">=</span> <span class="n">df_pokemon</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span> <span class="o">=</span> <span class="s2">&quot;Type 2&quot;</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">df_pokemon_subset</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>#</th>
-      <th>Total</th>
-      <th>HP</th>
-      <th>Attack</th>
-      <th>Defense</th>
-      <th>Sp. Atk</th>
-      <th>Sp. Def</th>
-      <th>Speed</th>
-      <th>Generation</th>
-    </tr>
-    <tr>
-      <th>Legendary</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>False</th>
-      <td>353.315646</td>
-      <td>417.213605</td>
-      <td>67.182313</td>
-      <td>75.669388</td>
-      <td>71.559184</td>
-      <td>68.454422</td>
-      <td>68.892517</td>
-      <td>65.455782</td>
-      <td>3.284354</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>470.215385</td>
-      <td>637.384615</td>
-      <td>92.738462</td>
-      <td>116.676923</td>
-      <td>99.661538</td>
-      <td>122.184615</td>
-      <td>105.938462</td>
-      <td>100.184615</td>
-      <td>3.769231</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>414
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_pokemon</span><span class="p">[[</span><span class="s1">&#39;Type 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Legendary&#39;</span><span class="p">,</span> <span class="s1">&#39;Attack&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Type 1&quot;</span><span class="p">,</span> <span class="s2">&quot;Legendary&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th></th>
-      <th>Attack</th>
-    </tr>
-    <tr>
-      <th>Type 1</th>
-      <th>Legendary</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Bug</th>
-      <th>False</th>
-      <td>70.971014</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Dark</th>
-      <th>False</th>
-      <td>86.862069</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>110.500000</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Dragon</th>
-      <th>False</th>
-      <td>103.400000</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>126.666667</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Electric</th>
-      <th>False</th>
-      <td>66.125000</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>98.750000</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Fairy</th>
-      <th>False</th>
-      <td>57.187500</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>131.000000</td>
-    </tr>
-    <tr>
-      <th>Fighting</th>
-      <th>False</th>
-      <td>96.777778</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Fire</th>
-      <th>False</th>
-      <td>82.191489</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>109.000000</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Flying</th>
-      <th>False</th>
-      <td>50.000000</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>107.500000</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Ghost</th>
-      <th>False</th>
-      <td>71.366667</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>110.000000</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Grass</th>
-      <th>False</th>
-      <td>72.119403</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>97.666667</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Ground</th>
-      <th>False</th>
-      <td>88.000000</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>150.000000</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Ice</th>
-      <th>False</th>
-      <td>73.227273</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>67.500000</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Normal</th>
-      <th>False</th>
-      <td>72.083333</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>140.000000</td>
-    </tr>
-    <tr>
-      <th>Poison</th>
-      <th>False</th>
-      <td>74.678571</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Psychic</th>
-      <th>False</th>
-      <td>54.953488</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>122.142857</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Rock</th>
-      <th>False</th>
-      <td>89.925000</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>122.250000</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Steel</th>
-      <th>False</th>
-      <td>92.086957</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>96.250000</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Water</th>
-      <th>False</th>
-      <td>72.777778</td>
-    </tr>
-    <tr>
-      <th>True</th>
-      <td>111.250000</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/anaconda3/lib/python3.9/site-packages/scipy/__init__.py:146: UserWarning: A NumPy version &gt;=1.16.5 and &lt;1.23.0 is required for this version of SciPy (detected version 1.23.1
+  warnings.warn(f&quot;A NumPy version &gt;={np_minversion} and &lt;{np_maxversion}&quot;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">violinplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">df_pokemon</span><span class="p">,</span>
+              <span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;Legendary&#39;</span><span class="p">,</span>
+              <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;HP&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;Legendary&#39;, ylabel=&#39;HP&#39;&gt;
+</pre></div>
+</div>
+<img alt="../_images/interactive_4_1.png" src="../_images/interactive_4_1.png" />
+</div>
 </div>
 
     <script type="text/x-thebe-config">
