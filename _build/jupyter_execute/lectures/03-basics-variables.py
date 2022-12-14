@@ -19,30 +19,6 @@
 # - What do we use it for?  
 # - How does it work?  
 
-# In[1]:
-
-
-99 % 2
-
-
-# In[2]:
-
-
-3 != 5
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
 # ## Python expressions
 # 
 # An **expression** is just a block of code, e.g.,
@@ -64,28 +40,28 @@
 # - Some kinds of code will be interpreted "literally" by Python.  
 # - A [literal](https://www.scaler.com/topics/python/literals-in-python/) is a kind of object/quantity whose value does not change during the execution of a program (i.e., these are *not* variables).  
 
-# In[3]:
+# In[1]:
 
 
 ## Literals can be numbers
 2
 
 
-# In[4]:
+# In[2]:
 
 
 # Or strings
 "Hello, world!"
 
 
-# In[5]:
+# In[3]:
 
 
 # Or a "boolean"
 True
 
 
-# In[6]:
+# In[4]:
 
 
 # Or even the special value "None"
@@ -106,7 +82,7 @@ None
 # 
 # 
 
-# In[7]:
+# In[5]:
 
 
 ## This assigns the variable name "example_var" to the value 1.
@@ -114,7 +90,7 @@ example_var = 1
 example_var
 
 
-# In[8]:
+# In[6]:
 
 
 ## This assigns the variable name "example_var" to the value 1.
@@ -131,7 +107,7 @@ example_var2
 # test_var = test_var + 4
 # ```
 
-# In[9]:
+# In[7]:
 
 
 ## Your code here
@@ -146,7 +122,7 @@ example_var2
 # test_var = test_var + new_var
 # ```
 
-# In[10]:
+# In[8]:
 
 
 ## Your code here
@@ -161,7 +137,7 @@ example_var2
 #    - Even if our code is formatted correctly, other errors can arise, such as a `NameError`.  
 # - When an error arises, Python will give us a message indicating the type and source of the error.
 
-# In[11]:
+# In[9]:
 
 
 # This code is referencing "new_var", which hasn't been defined
