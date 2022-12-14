@@ -74,9 +74,7 @@ Note that the number on the **right-hand** side of the range is *not included* i
 77-80%   | C+
 73-77%   | C
 70-73%   | C-
-67-79%   | D+
-63-67%   | D
-60-63%   | D-
+60-69%   | D
 <60%     | F
 
 
