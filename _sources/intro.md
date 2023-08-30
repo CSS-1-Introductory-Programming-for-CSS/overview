@@ -1,6 +1,6 @@
 # Welcome to CSS 1!
 
-CSS 1 | Sean Trott | Fall 2022 | UCSD
+CSS 1 | Sean Trott | Fall 2023 | UCSD
 
 ## Course Overview
 
@@ -16,7 +16,7 @@ Ideas for course structure have also been adapted from [COGS 18](https://cogs18.
 
 ## Current Iteration
 
-The current version of this class is **Fall 2022**.
+The current version of this class is **Fall 2023**.
 
 
 ## Grading
@@ -24,10 +24,6 @@ The current version of this class is **Fall 2022**.
 Your grade will be determined by your performance on weekly [**labs**](labs/overview.md), several [**problem sets**](problem_sets/overview.md), and a [**final project**](project/overview.md).
 
 There are no midterms or final exams; see the [syllabus](course/syllabus.md) for more details.
-
-## Current Iteration
-
-The current iteration of CSS 1 is **Fall 2022**. The instructor is [Sean Trott](https://seantrott.github.io/).
 
 
 ## Topics
