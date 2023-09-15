@@ -2,13 +2,12 @@
 
 Note that this schedule is **aspirational** and is therefore **subject to change**.
 
+Also, note that for this quarter (Fall 2023), lecture is scheduled to meet only *Mondays and Fridays*.
+
 | Date | Topics | Assignment due | Notes |
 | ---- | ------ | -------------- | ----- |
-| **Week 0** | | | |
-| F-09-23-2022 | Welcome + Introduction | | |
-|  | | | |
 | **Week 1** | | | |
-| M-09-26-2022 | Tooling | | |
+| M-09-26-2022 | Introduction + Tooling | | |
 | W-09-28-2022 | Python Basics: Variables | | |
 | F-09-30-2022 | Python Basics: Syntax |  | |
 | **Week 2** | | | |
