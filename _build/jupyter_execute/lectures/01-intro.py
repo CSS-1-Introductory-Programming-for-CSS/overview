@@ -77,14 +77,6 @@
 # 
 # ![title](img/chetty_2022.png)
 
-# ### Policing and Racial Justice
-# 
-# Work by [Dan Jurafsky and colleagues](https://www.pnas.org/doi/full/10.1073/pnas.1702413114#fig01) using **body-cam footage** has demonstrated racial disparities in how respectfully police officers speak to community members during routine traffic stops.
-# 
-# *Jurafsky et al. (2017)*:
-# 
-# ![title](img/jurafsky_2017.png)
-
 # ### Urban planning and welfare
 # 
 # Recent work by [Nicol Bergou and colleagues](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0271306) used a **smartphone app** to investigate the link between features of urban design and self-reported sell-being.
