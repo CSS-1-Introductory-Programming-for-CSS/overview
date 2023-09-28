@@ -2,7 +2,7 @@
 
 Labs are intended to give you hands-on programming experience. 
 
-You'll have a lab each week, which is intended to be completed during section. Note that if you can't physically attend section (or are working asynchronously), that's totally fine. The benefit of working during section is that you'll have quick access to the excellent Teaching Assistants (and your classmates) if you have questions.
+You'll have a lab almost every week, which is intended to be completed during section. Note that if you can't physically attend section (or are working asynchronously), that's totally fine. The benefit of working during section is that you'll have quick access to the excellent Teaching Assistants (and your classmates) if you have questions.
 
 ## Labs are collaborative.  
 
