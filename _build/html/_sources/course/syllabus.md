@@ -1,4 +1,4 @@
-# CSS 1 Syllabus: Fall 2022
+# CSS 1 Syllabus: Fall 2023
 
 ## Course Overview
 
@@ -18,18 +18,14 @@ By the end of this course, you should be able to:
 ### Teaching Team:
 
 - [Sean Trott](https://seantrott.github.io/): Assistant Teaching Professor in Cognitive Science and CSS.
-- TAs:
-   - Pulkit Agrawal  
-   - Nikolay Kudrin  
-   - Purva Kothari  
-   - Simran Barnwal
+- TA: Anjani Bhamidipati
 
 #### Teaching Team OH
 
 | Who? | When? | Where? |
 | ---- | ----- | ------ |
-| Sean Trott | Monday 10-11 | CSB Courtyard |
-| TBD | TBD | TBD |
+| Sean Trott | Wednesday 10-11 | CSB Courtyard |
+| Anjani Bhamidipati | TBD | TBD |
 
 
 
@@ -47,7 +43,7 @@ Your grade will be determined by three kinds of assessments: [coding labs](../la
 
 | Grade Component | Percentage of Final Grade |
 | --------------- | ------------------------- |
-| 10 Coding Labs | 50% (5% each) |
+| 8 Coding Labs | 50% (6.25% each) |
 | 4 Problem Sets | 32% (8% each) |
 | 1 Final Project| 18% |
 
@@ -103,7 +99,7 @@ Instructors can be reached in the following ways:
 - Private message over Piazza.  
 - Email. 
 
-The course Piazza can be found here: piazza.com/ucsd/fall2022/css1
+The course Piazza can be found here: https://piazza.com/ucsd/fall2023/css1
 
 Note that in general, we prefer communication over Piazza as opposed to email. 
 
