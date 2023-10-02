@@ -32,7 +32,9 @@ By the end of this course, you should be able to:
 ### When/Where?:
 
 - Lecture: MW 9-10 AM, CSB 002 (also podcasted).
-- Coding Lab Sections (Center 222, Pepper Canyon Hall 121).
+- Coding Lab Sections 
+   - MW 11-12 (Center 222).
+   - MW 12-1 (Pepper Canyon Hall 121).
 
 
 ## Grading
