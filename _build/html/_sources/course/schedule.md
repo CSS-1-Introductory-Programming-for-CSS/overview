@@ -31,7 +31,7 @@ Also, note that for this quarter (Fall 2023), lecture is scheduled to meet only 
 | W-11-08-2022 | Functions (14) | | |
 | F-11-10-2022 | | Lab 5 due | |
 | **Week 7** | | | | |
-| M-11-13-2022 | Functions (14)| | |
+| M-11-13-2022 | Functions (14) (**Pre-recorded, remote lecture**)| | |
 | W-11-15-2022 | Reading Text Data (17)| | **PS 3 due** | |
 | F-11-17-2022 | | Lab 6 due| |
 | **Week 8** | | | |
