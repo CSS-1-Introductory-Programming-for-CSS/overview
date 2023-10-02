@@ -6,7 +6,7 @@
 # ## Addressing Q/A
 # 
 # **Question**: What is Piazza?
-# **Answer**: Piazza is a way to ask questions about course content. In general, we prefer questions over Piazza than email. The course Piazza can be found here: https://piazza.com/class?nid=l88zbj22p6w26z
+# **Answer**: Piazza is a way to ask questions about course content. In general, we prefer questions over Piazza than email. The course Piazza can be found here: https://piazza.com/class/lmzc5p2xoi13u9/
 # 
 # **Question**: People are talking about DataHub, labs, etc. I feel a little behind because I don't know what they're referring to.  
 # **Answer**: I know it can feel overwhelming, but we're going to start covering those details today. *No labs or assignments have been relased yet, so don't worry that you've missed anything.*
@@ -19,18 +19,6 @@
 # 
 # **Question**: I'm on the waitlist. Can/will I get into the class?  
 # **Answer**: I don't have direct control over the waitlist. I've contacted the CSS administration about this and will keep you updated; if you have questions, I recommend contacting CSS staff.
-
-# ## Office Hours
-# 
-# My office hours will be: 
-# 
-# - When: Monday, 10-11 AM (after class).
-# - Where: CSB courtyard. 
-# 
-# TA Office hours:
-# 
-# - Nikolay Kudrin: 4-5pm (Zoom/remote). 
-# - (Others updated shortly)
 
 # ## Goals of this lecture
 # 

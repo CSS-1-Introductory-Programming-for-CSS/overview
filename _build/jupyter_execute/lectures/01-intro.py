@@ -14,18 +14,13 @@
 # **Teaching Team**:
 # 
 # - [Sean Trott](https://seantrott.github.io/): Assistant Teaching Professor in Cognitive Science and CSS.
-# - TAs:
-#    - Pulkit Agrawal  
-#    - Nikolay Kudrin  
-#    - Purva Kothari  
-#    - Simran Barnwal
+# - TA: Anjani Bhamidipati
 # 
-# **When/Where?**:
-# - Lecture: MWF 9-10 AM, Center 212 (also podcasted).  
-# - Coding Lab Sections (ERCA 117): 
-#    - Tuesday, 12-1:50, 2-3:50
-#    - Wednesday: 1-2:50
-#    - Friday: 12-1:50
+# **When/Where?**: 
+# - Lecture: MW 9-10 AM, CSB 002 (also podcasted).
+# - Coding Lab Sections 
+#    - MW 11-12 (Center 222).
+#    - MW 12-1 (Pepper Canyon Hall 121).
 #    
 # [**Course Website**](https://ucsd-css1-introduction.github.io/overview/intro.html).
 # 
@@ -161,13 +156,11 @@ variable_integer2 + variable_integer1
 # ### Lab
 # 
 # - Lab will be a time to get **hands-on** practice with course concepts.
-# - Each week (except Week 0) will have a *Coding Lab* assignment.
+# - Most weeks will have a *Coding Lab* assignment.
 #   - Altogether these assignments are worth 50% of your grade.
 #   - You can work collaboratively on Coding Labs during lab time.
 # - Lab attendance is helpful, but not required.
 #   - As long as labs don't get too crowded, you can go to whichever lab you prefer.
-# 
-# **Note**: For the first two weeks, the **Wednesday lab** will be remote (hosted by Pulkit).
 
 # ### Overview of topics
 # 
@@ -204,7 +197,7 @@ variable_integer2 + variable_integer1
 # 
 # | Grade Component | Percentage of Final Grade |
 # | --------------- | ------------------------- |
-# | 10 Coding Labs | 50% (5% each) |
+# | 8 Coding Labs | 50% (5% each) |
 # | 4 Problem Sets | 32% (8% each) |
 # | 1 Final Project| 18% |
 
