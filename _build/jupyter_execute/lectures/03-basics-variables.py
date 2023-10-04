@@ -5,7 +5,7 @@
 
 # ### Announcements
 # 
-# - **Extra credit survey** is due today (already lots of responses, so thank you!). 
+# - **Extra credit survey** is due next Friday. 
 # - For people with trouble logging into DataHub (i.e., a **network error**), try the following:
 #    - Visit this page: https://datahub.ucsd.edu/hub/spawn
 #    - Click "Services" --> "manual-resetter" --> follow instructions.

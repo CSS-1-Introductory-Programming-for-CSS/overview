@@ -3,23 +3,6 @@
 
 # # 02-Tooling
 
-# ## Addressing Q/A
-# 
-# **Question**: What is Piazza?
-# **Answer**: Piazza is a way to ask questions about course content. In general, we prefer questions over Piazza than email. The course Piazza can be found here: https://piazza.com/class/lmzc5p2xoi13u9/
-# 
-# **Question**: People are talking about DataHub, labs, etc. I feel a little behind because I don't know what they're referring to.  
-# **Answer**: I know it can feel overwhelming, but we're going to start covering those details today. *No labs or assignments have been relased yet, so don't worry that you've missed anything.*
-# 
-# **Question**: What is DataHub? How do I login?  
-# **Answer**: DataHub is a way to use Jupyter notebooks (and more) through UCSD server infrastructure. We'll talk about that more today. You *should* be able to login using your student-sign on (SSO). **Note that if DataHub continues to have issues, we will extend the deadline for the first lab!**
-# 
-# **Question**: Where will I find assignments?  
-# **Answer**: Assignments will be released through DataHub. We have a guide on the website for **fetching** and **submitting assignments** but 
-# 
-# **Question**: I'm on the waitlist. Can/will I get into the class?  
-# **Answer**: I don't have direct control over the waitlist. I've contacted the CSS administration about this and will keep you updated; if you have questions, I recommend contacting CSS staff.
-
 # ## Goals of this lecture
 # 
 # In this lecture, we'll discuss some of the key **software tools** we'll be using throughout the course.
@@ -47,7 +30,7 @@
 
 # ### What is Python?
 # 
-# - Python is a **programming language**. 
+# - Python is a *programming language*. 
 #   - It's a way to "do" computation.  
 #   - Each programming language has its own "syntax": how to write commands in that language.
 # - Python is also an **ecosystem**.

@@ -186,12 +186,10 @@ variable_integer2 + variable_integer1
 # 
 # - The tentative schedule of topics can be found here: https://ucsd-css1-introduction.github.io/overview/course/schedule.html
 # - This schedule is **aspirational**.  
-#   - This is the first time I'm teaching the course, so we may get through topics slower or faster than described there.  
-# 
 
 # ### Grading and Assessments
 # 
-# - Each week (except Week 0) will have a **coding lab** due the following Monday.
+# - Most weeks will have a **coding lab** due the following Monday.
 # - There are also **four problem sets**, which will be auto-graded.
 # - There is also a **final project**––like a big, more coherent problem set.
 # 

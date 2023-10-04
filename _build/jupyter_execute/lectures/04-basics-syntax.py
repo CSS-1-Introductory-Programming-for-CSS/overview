@@ -3,13 +3,6 @@
 
 # # Python Basics: Operators and Syntax
 
-# ## Announcements
-# 
-# - **Lab 1** due today.
-# - **Problem set 1** will be released today (due *next Wednesday*).
-#   - Similar to Lab 1, but to be completed independently.
-# - **Lab 2** will also be released by end of day (due *next Monday*).  
-
 # ## Goals of this lecture
 # 
 # - What is syntax?
