@@ -24,7 +24,7 @@ By the end of this course, you should be able to:
 
 | Who? | When? | Where? |
 | ---- | ----- | ------ |
-| Sean Trott | Wednesday 10-11 | CSB Courtyard |
+| Sean Trott | Wednesday 10-11 | CSB 259 |
 | Anjani Bhamidipati | Wednesday 1:30-2:30 (Zoom) | TBD |
 
 
