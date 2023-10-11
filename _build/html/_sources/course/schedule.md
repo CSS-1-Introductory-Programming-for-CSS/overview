@@ -37,11 +37,11 @@ Also, note that for this quarter (Fall 2023), lecture is scheduled to meet only 
 | **Week 8** | | | |
 | M-11-20-2022 | Reading Text Data (18)| | PS 4 released |
 | W-11-22-2022 | Numpy (20)| | |
-| F-11-24-2022 || Lab 7 due | |
+| F-11-24-2022 ||  | |
 | **Week 9** | | | | 
 | M-11-27-2022 | Pandas: Data Structures (22) |  | **Final Project Released** |
 | W-11-29-2022 | Pandas: Basic Operations (23) | | **PS 4 due** |
-| F-12-01-2022 | | | |
+| F-12-01-2022 | | Lab 7 due| |
 | **Week 10** | | | |
 | M-12-04-2022 | Pandas: Advanced Operations (24) |  | |
 | W-12-06-2022 | Course Review (25) |  | | 

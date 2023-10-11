@@ -3,12 +3,6 @@
 
 # # Control Flow: Conditionals
 
-# ## Announcements
-# 
-# - Lab 2 is due **next Monday**.  
-# - Problem set 1 is due **next Wednesday**.
-# - Quick check-in: https://forms.gle/n48nBZYM8XsHf35g6
-
 # ## Goals of this lecture
 # 
 # - What is "control flow"?  
@@ -138,7 +132,7 @@ else:
 # 1. If `condition == True`, execute Action A.  
 # 2. `else`, execute Action B. 
 
-# In[45]:
+# In[9]:
 
 
 condition = False
@@ -154,7 +148,7 @@ else:
 # 
 # If there is no indented code below an `if` statement, you'll get an `IndentationError`.
 
-# In[46]:
+# In[10]:
 
 
 if 3 > 2:
@@ -163,7 +157,7 @@ print("No idententation")
 
 # However, you *can* still have un-indented code below an `if` or `else` statement, as long as there's *also* indented code.
 
-# In[47]:
+# In[11]:
 
 
 if 3 > 2:
@@ -190,7 +184,7 @@ print("This will execute regardless.")
 # 
 # This is kind of a combination of an `if` and `else` statement.  
 
-# In[48]:
+# In[12]:
 
 
 condition1 = False
@@ -205,7 +199,7 @@ elif condition2:
 # 
 # An `elif` statement will *only run* if the `if` statement evaluates to `False`––even if the `elif` statement would've evaluated to `True`!
 
-# In[49]:
+# In[13]:
 
 
 condition1 = True
@@ -223,7 +217,7 @@ elif condition2:
 # - The code under both `if` statements can run if both statements are `True`.  
 # - The code under an `elif` statement will only run if the `if` statement is False.
 
-# In[50]:
+# In[14]:
 
 
 condition1 = True
@@ -241,7 +235,7 @@ if condition2:
 # - It also just doesn't make sense logically. If `elif` were at the end, it'd never be evaluated anyway, since `else` covers everything other than the `if` statement.
 # 
 
-# In[51]:
+# In[15]:
 
 
 if 2 > 3:
@@ -256,7 +250,7 @@ elif 2 > 1:
 # 
 # What do you expect the value of `x` to be if the following code is run? (Try to figure it out before running the code to check what `x` is.)
 
-# In[52]:
+# In[16]:
 
 
 y = 1
@@ -273,7 +267,7 @@ else:
 # 
 # What do you expect the value of `x` to be if the following code is run? (Try to figure it out before running the code to check what `x` is.)
 
-# In[53]:
+# In[17]:
 
 
 y = 1
@@ -302,7 +296,7 @@ else:
 # 
 # **Hint**: Think about what we just discussed––an `else` attaches to the nearest `if` statement.
 
-# In[54]:
+# In[18]:
 
 
 A = True
@@ -337,7 +331,7 @@ else:
 # 
 # We can use these to check for more complex conditions.
 
-# In[55]:
+# In[19]:
 
 
 a = 20
@@ -351,7 +345,7 @@ if b > a and c > b:
 # 
 # Why does the top code block execute the code under the `if` statement, while the bottom one doesn't?
 
-# In[56]:
+# In[20]:
 
 
 a = 20
@@ -361,7 +355,7 @@ if b > a or c > b:
     print("At least one condition is True.")
 
 
-# In[57]:
+# In[21]:
 
 
 a = 20
@@ -373,7 +367,7 @@ if b > a and c > b:
 
 # ### A simple use-case for `and`
 
-# In[58]:
+# In[22]:
 
 
 is_password = True
@@ -387,7 +381,7 @@ if is_password and (withdrawal < checking_account):
 
 # ### A simple use-case for `or`
 
-# In[60]:
+# In[23]:
 
 
 is_dog = True
@@ -416,7 +410,7 @@ else:
 # 
 # > A **nested conditional** is one that contains at least one `if` statement "nested" within another conditional statement.
 
-# In[63]:
+# In[24]:
 
 
 a = 8
