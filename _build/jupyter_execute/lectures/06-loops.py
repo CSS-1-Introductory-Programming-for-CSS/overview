@@ -3,12 +3,6 @@
 
 # # Control Flow: Loops
 
-# ## Announcements
-# 
-# - Lab 1 due today.  
-# - PS 1 due Wednesday.  
-# - Final projects: will be like a longer problem set, with more coherent questions.
-
 # ## Goals of this lecture
 # 
 # - Control flow, revisited.  
@@ -428,13 +422,6 @@ for num in numbers:
 # 
 # That was a (hopefully somewhat gentle) introduction to `for` loops. If you're feeling like you want more practice:
 # 
-# - This week's lab will contain many more examples.  
 # - [W3 schools](https://www.w3schools.com/python/python_for_loops.asp), as always, has some good practice problems.
 # 
 # Next lecture we'll cover a *new* kind of loop: a `while` loop.
-
-# In[ ]:
-
-
-
-
