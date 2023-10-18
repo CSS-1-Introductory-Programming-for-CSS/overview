@@ -506,23 +506,30 @@ title="Print to PDF"
                 
   <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">B</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">C</span> <span class="o">=</span> <span class="kc">True</span>
-
-<span class="k">if</span> <span class="n">A</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A is True&quot;</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="n">B</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B is True&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Neither A nor B are True.&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;COMPUTATIONAL Social Science&quot;</span>
+<span class="n">vowels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">]</span>
+<span class="c1">### </span>
+<span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">vowels</span> <span class="ow">and</span> <span class="n">letter</span> <span class="o">!=</span> <span class="s2">&quot; &quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A is True
-Neither A nor B are True.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c
+m
+p
+t
+t
+n
+l
+s
+c
+l
+s
+c
+n
+c
 </pre></div>
 </div>
 </div>
