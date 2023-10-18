@@ -3,11 +3,6 @@
 
 # # Loops (continued)
 
-# ## Announcements
-# 
-# - Problem set 1 due today!
-# - Reminder: when modifying labs/problem sets, make sure not to **delete** or **modify** any of the test cells (or rename the assignment), as that can affect the auto-grader.
-
 # ## Goals of this lecture
 # 
 # - **Loops**, revisited.  
