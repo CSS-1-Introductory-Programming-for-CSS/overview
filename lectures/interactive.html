@@ -506,30 +506,53 @@ title="Print to PDF"
                 
   <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;COMPUTATIONAL Social Science&quot;</span>
-<span class="n">vowels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">]</span>
-<span class="c1">### </span>
-<span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">vowels</span> <span class="ow">and</span> <span class="n">letter</span> <span class="o">!=</span> <span class="s2">&quot; &quot;</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Outer loop&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">num2</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inner loop&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">num2</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">num2</span> <span class="o">&gt;</span> <span class="n">num</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sum&quot;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">num</span> <span class="o">+</span> <span class="n">num2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c
-m
-p
-t
-t
-n
-l
-s
-c
-l
-s
-c
-n
-c
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Outer loop
+1
+Outer loop
+2
+Inner loop
+1
+Inner loop
+2
+Inner loop
+3
+Sum
+5
+Inner loop
+4
+Outer loop
+3
+Outer loop
+4
+Inner loop
+1
+Inner loop
+2
+Inner loop
+3
+Inner loop
+4
 </pre></div>
 </div>
 </div>
