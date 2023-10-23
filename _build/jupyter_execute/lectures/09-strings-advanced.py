@@ -3,10 +3,6 @@
 
 # # Strings in Python (continued)
 
-# ## Announcements
-# 
-# - Announcement on how to write your answers for labs/problem sets.
-
 # ### Example
 # 
 # Suppose a problem asks you to calculate the `len` of `list_example` and store it in a variable called `length`.
