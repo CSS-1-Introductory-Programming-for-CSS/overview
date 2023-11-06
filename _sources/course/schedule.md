@@ -32,11 +32,11 @@ Also, note that for this quarter (Fall 2023), lecture is scheduled to meet only 
 | F-11-10-2022 | | Lab 5 due | |
 | **Week 7** | | | | |
 | M-11-13-2022 | Functions (14) (**Pre-recorded, remote lecture**)| | |
-| W-11-15-2022 | Reading Text Data (17)| | **PS 3 due** | |
+| W-11-15-2022 | Reading Text Data (17)| |  | |
 | F-11-17-2022 | | Lab 6 due| |
 | **Week 8** | | | |
 | M-11-20-2022 | Reading Text Data (18)| | PS 4 released |
-| W-11-22-2022 | Numpy (20)| | |
+| W-11-22-2022 | Numpy (20)| **PS 3 due** | |
 | F-11-24-2022 ||  | |
 | **Week 9** | | | | 
 | M-11-27-2022 | Pandas: Data Structures (22) |  | **Final Project Released** |

@@ -506,28 +506,53 @@ title="Print to PDF"
                 
   <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>
-<span class="n">f_output</span> <span class="o">=</span> <span class="n">fruits</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;orange&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">person</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="s1">&#39;Sean Trott&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;Occupation&#39;</span><span class="p">:</span> <span class="s1">&#39;Assistant Teaching Professor&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;Location&#39;</span><span class="p">:</span> <span class="s1">&#39;San Diego&#39;</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">person</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">person</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;apple&#39;, &#39;banana&#39;]
-[&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;dict&#39;&gt;
+{&#39;Name&#39;: &#39;Sean Trott&#39;, &#39;Occupation&#39;: &#39;Assistant Teaching Professor&#39;, &#39;Location&#39;: &#39;San Diego&#39;}
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fruits</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">people</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="s1">&#39;Sean Trott&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;Occupation&#39;</span><span class="p">:</span> <span class="s1">&#39;Assistant Teaching Professor&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;Location&#39;</span><span class="p">:</span> <span class="s1">&#39;San Diego&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="s1">&#39;First Last&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;Occupation&#39;</span><span class="p">:</span> <span class="s1">&#39;Profession&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;Location&#39;</span><span class="p">:</span> <span class="s1">&#39;San Diego&#39;</span><span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">people</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Sean&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Occupation&#39;</span><span class="p">:</span> <span class="s1">&#39;Professor&#39;</span><span class="p">},</span>
+    <span class="s1">&#39;Sam&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Occupation&quot;</span><span class="p">:</span> <span class="s2">&quot;Student&quot;</span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">people</span><span class="p">[</span><span class="s1">&#39;Sam&#39;</span><span class="p">][</span><span class="s1">&#39;Occupation&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Student&#39;
 </pre></div>
 </div>
 </div>
