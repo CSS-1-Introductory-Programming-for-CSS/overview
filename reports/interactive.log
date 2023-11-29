@@ -17,13 +17,18 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-exponentiate(2, b = 4, 3)
+## Turning this into a dataframe
+df_ec = pd.DataFrame(ec_data)
+df_ec
 ------------------
 
-[0;36m  Input [0;32mIn [2][0;36m[0m
-[0;31m    exponentiate(2, b = 4, 3)[0m
-[0m                            ^[0m
-[0;31mSyntaxError[0m[0;31m:[0m positional argument follows keyword argument
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Input [0;32mIn [2][0m, in [0;36m<cell line: 2>[0;34m()[0m
+[1;32m      1[0m [38;5;66;03m## Turning this into a dataframe[39;00m
+[0;32m----> 2[0m df_ec [38;5;241m=[39m pd[38;5;241m.[39mDataFrame([43mec_data[49m)
+[1;32m      3[0m df_ec
 
-SyntaxError: positional argument follows keyword argument (1491491819.py, line 1)
+[0;31mNameError[0m: name 'ec_data' is not defined
+NameError: name 'ec_data' is not defined
 
